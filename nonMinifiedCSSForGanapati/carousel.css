@@ -1,0 +1,51 @@
+.carousel{
+  opacity: 95%;
+}
+.carousel:hover{
+  opacity: 100%;
+}
+
+.control-dots{
+  display: flex;
+  flex-direction: column;
+  left: 10px;
+  gap: 10px;
+  justify-content: center;
+  top: 0;
+}
+@media screen and (max-width: 960px) {
+  .carousel .control-dots {
+    transform: none;
+    flex-direction: row;
+    gap:0;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1; }
+    @media (min-width: 960px) {
+      .carousel .control-dots {
+        bottom: 0; } }
+    .carousel .control-dots .dot {
+      -webkit-transition: opacity 0.25s ease-in;
+      -moz-transition: opacity 0.25s ease-in;
+      -ms-transition: opacity 0.25s ease-in;
+      -o-transition: opacity 0.25s ease-in;
+      transition: opacity 0.25s ease-in;
+      opacity: 0.3;
+      filter: alpha(opacity=30);
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+      background: #fff;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 8px; }
+      .carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover {
+        opacity: 1;
+        filter: alpha(opacity=100); }
+}
