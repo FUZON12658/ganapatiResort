@@ -44,7 +44,7 @@ const FloatingMenu = () => {
 
   return (
     <div>
-    <div className="hamburgerMenu">
+    <div className="hamburgerMenu z-50">
       <div className={`fixed h-full w-full bg-white z-50 ${(renderHamburgerMenu) ? 'left-0' : '-left-full'} transition-all duration-500`}>
       <ScrollingLogo/>
       <div className="flex items-center justify-center w-full h-full sm:gap-48  2xl:text-lg ">
@@ -64,7 +64,7 @@ const FloatingMenu = () => {
       </div>
     </div>
     <div
-      className={`${topPosition} sm:fixed sm:top-1/2 sm:right-0 sm:transform sm:-translate-y-1/2 bg-gray-800 text-white sm:p-4 rounded-l-md shadow-md z-50 select-none border-orange-500 border-2 md:rounded-r-md flex sm:flex-col w-full sm:w-auto justify-center text-sm sm:text-base `}
+      className={`${topPosition} sm:fixed sm:top-1/2 sm:right-0 sm:transform sm:-translate-y-1/2 bg-gray-800 text-white sm:p-4 rounded-l-md shadow-md z-40 select-none border-orange-500 border-2 md:rounded-r-md flex sm:flex-col w-full sm:w-auto justify-center text-sm sm:text-base `}
       id="floatingNavBar"
     >
       <div className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3">
