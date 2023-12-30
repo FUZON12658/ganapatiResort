@@ -90,6 +90,16 @@ export default function CarouselCrossfade() {
               alt="..."
             />
           </TECarouselItem>
+          <TECarouselItem
+            itemID={3}
+            className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+          >
+            <img
+              src={heroThree}
+              className="block w-full"
+              alt="..."
+            />
+          </TECarouselItem>
         </div>
       </TECarousel>
     </>
