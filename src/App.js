@@ -8,8 +8,8 @@ import ScrollingLogo from './MasterComponents/ScrollingLogo';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HamburgerMenu } from './MasterComponents/HamburgerMenu';
 import RoomsDisplay from './Components/RoomsAndSuites/RoomsDisplay';
-import RoomDisplayFrame from './Components/RoomsAndSuites/RoomDisplayFrame';
 import PhotoGallery from './Components/Gallery/PhotoGallery';
+import MeetingsAndEvents from './Components/MeetingsEvents/MeetingsAndEvents';
 
 
 
@@ -23,6 +23,7 @@ function App() {
     <Route exact path="/" element={<Home/>}></Route>
     <Route exact path="/rooms" element={<RoomsDisplay/>}></Route>
     <Route exact path="/roomDetails" element={<PhotoGallery/>}></Route>
+    <Route exact path="/meetingsAndEvents" element={<MeetingsAndEvents/>}></Route>
   </Routes>
   <Footer/>
   </Router>

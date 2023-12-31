@@ -55,7 +55,7 @@ const FloatingMenu = () => {
           <li><Link className="hover:text-orange-500"  to="/" onClick={renderHamburgerMenuTrue}>Home</Link></li>
           <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>About</Link></li>
           <li><Link className="hover:text-orange-500"  to="/rooms" onClick={renderHamburgerMenuTrue}>Room & Suites</Link></li>
-          <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>Meetings & Events</Link></li>
+          <li><Link className="hover:text-orange-500"  to="/meetingsAndEvents" onClick={renderHamburgerMenuTrue}>Meetings & Events</Link></li>
         </ul>
         <ul className='hidden sm:flow-root'>
           <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>Wedding</Link></li>
@@ -67,7 +67,7 @@ const FloatingMenu = () => {
           <li><Link className="hover:text-orange-500"  to="/" onClick={renderHamburgerMenuTrue}>Home</Link></li>
           <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>About</Link></li>
           <li><Link className="hover:text-orange-500"  to="/rooms" onClick={renderHamburgerMenuTrue}>Room & Suites</Link></li>
-          <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>Meetings & Events</Link></li>
+          <li><Link className="hover:text-orange-500"  to="/meetingsAndEvents" onClick={renderHamburgerMenuTrue}>Meetings & Events</Link></li>
           <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>Wedding</Link></li>
           <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>Lounge & Bar</Link></li>
           <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>Experiences</Link></li>
