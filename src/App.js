@@ -7,15 +7,22 @@ import FloatingMenu from './MasterComponents/FloatingMenu';
 import ScrollingLogo from './MasterComponents/ScrollingLogo';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HamburgerMenu } from './MasterComponents/HamburgerMenu';
+import RoomsDisplay from './Components/RoomsAndSuites/RoomsDisplay';
+import RoomDisplayFrame from './Components/RoomsAndSuites/RoomDisplayFrame';
+import PhotoGallery from './Components/Gallery/PhotoGallery';
+
+
 
 function App() {
   return (
   <>
   <Router>
-  <ScrollingLogo/>
   <FloatingMenu/>
+  <ScrollingLogo/>
   <Routes>
     <Route exact path="/" element={<Home/>}></Route>
+    <Route exact path="/rooms" element={<RoomsDisplay/>}></Route>
+    <Route exact path="/roomDetails" element={<PhotoGallery/>}></Route>
   </Routes>
   <Footer/>
   </Router>
@@ -24,3 +31,7 @@ function App() {
 }
 
 export default App;
+
+
+const roomType = new URLSearchParams(location.search).get('roomType');
+

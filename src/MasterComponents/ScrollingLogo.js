@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 const LogoComponent = () => {
 
   return (
-    <div className={`w-full relative z-40 flex justify-center`}>
+    <div className={`w-full relative z-30   flex justify-center`}>
       <div className={`flex flex-col items-center justify-center sm:flex sm:absolute`}>
         <img
           src={logo}
