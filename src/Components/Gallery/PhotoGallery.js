@@ -50,8 +50,10 @@ import singleRoomFive from "../../Images/singleRoom/singleRoom5.jpg";
 import suiteRoomOne from "../../Images/suiteRoom/suiteRoom1.jpg";
 import suiteRoomTwo from "../../Images/suiteRoom/suiteRoom2.jpg";
 import suiteRoomThree from "../../Images/suiteRoom/suiteRoom3.jpg";
+import { useLocation } from "react-router-dom";
 
 const PhotoGallery = () => {
+  const location = useLocation();
   const roomType = new URLSearchParams(location.search).get("roomType");
 
   if (roomType === "apartmentRoom") {
