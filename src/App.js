@@ -33,5 +33,3 @@ function App() {
 export default App;
 
 
-const roomType = new URLSearchParams(location.search).get('roomType');
-
