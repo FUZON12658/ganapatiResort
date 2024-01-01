@@ -18,7 +18,6 @@ function App() {
   <>
   <Router>
   <FloatingMenu/>
-  <ScrollingLogo/>
   <Routes>
     <Route exact path="/" element={<Home/>}></Route>
     <Route exact path="/rooms" element={<RoomsDisplay/>}></Route>

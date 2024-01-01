@@ -50,7 +50,7 @@ const FloatingMenu = () => {
         <ScrollingLogo/>
         <i className="fa-solid fa-circle-xmark absolute m-5 sm:m-10 ml-[80vw] sm:ml-[95vw] z-50 scale-100 sm:scale-150 cursor-pointer" onClick={renderHamburgerMenuTrue}></i>
       </div>
-      <div className="flex flex-col mt-2 sm:flex-row items-center justify-center w-full h-full sm:gap-48 2xl:text-lg ">
+      <div className="flex flex-col mt-2 sm:flex-row items-center justify-center w-full h-full sm:gap-48 xl:text-xl xl:leading-10 2xl:text-2xl 2xl:leading-10" style={{fontFamily:"Lobster"}}>
         <ul className='hidden sm:flow-root '>
           <li><Link className="hover:text-orange-500"  to="/" onClick={renderHamburgerMenuTrue}>Home</Link></li>
           <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>About</Link></li>

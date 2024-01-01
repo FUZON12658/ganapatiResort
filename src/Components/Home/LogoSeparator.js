@@ -10,9 +10,9 @@ export default () => {
             </div>
           </div>
           <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
-            <div class="flex h-full items-center rounded-lg bg-primary p-6 text-center text-white lg:pl-12 lg:text-left">
+            <div class="flex h-full items-center rounded-lg bg-orange-500 p-6 text-center text-white lg:pl-12 lg:text-left">
               <div class="lg:pl-12">
-                <h2 class="mb-6 text-3xl font-bold">
+                <h2 class="mb-6 text-3xl" style={{fontFamily:"Lobster"}}>
                   What are you waiting for?
                 </h2>
                 <p class="mb-6 pb-2 lg:pb-0">

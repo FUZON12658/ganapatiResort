@@ -1,7 +1,7 @@
 import logo from "../Images/resortLogo.png";
 import React, { useEffect, useState } from 'react';
 
-const LogoComponent = () => {
+const ScrollingLogo = () => {
 
   return (
     <div className={`w-full relative z-30   flex justify-center`}>
@@ -16,7 +16,7 @@ const LogoComponent = () => {
   );
 };
 
-export default LogoComponent;
+export default ScrollingLogo;
 
 
 

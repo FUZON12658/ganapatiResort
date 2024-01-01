@@ -7,6 +7,7 @@ import familyHero from "../../Images/familyRoom/familyRoom1.jpg"
 import singleHero from "../../Images/singleRoom/singleRoom1.jpg"
 import suiteHero from "../../Images/suiteRoom/suiteRoom1.jpg"
 import { Link, useNavigate } from 'react-router-dom'
+import ScrollingLogo from '../../MasterComponents/ScrollingLogo'
 
 
 const RoomsDisplay = () => {
@@ -16,13 +17,16 @@ const RoomsDisplay = () => {
     navigate(`/roomDetails?roomType=${roomType}`);
   }
   return (
-    <div class="container my-24 mx-auto md:px-6 mt-20 sm:mt-56">
+    <>
+    <ScrollingLogo/>
+    <div class="container my-24 sm:mt-56 mx-auto md:px-6">
+      
       <section class="mb-32 text-center text-white">
-        <h2 class="mb-12 pb-4 text-center text-3xl font-bold text-black">
+        <h2 class="mb-12 pb-4 text-center text-3xl text-black lobster">
           Rooms & Suites
         </h2>
     
-        <div class="grid gap-6 lg:grid-cols-3 xl:gap-x-12">
+        <div class="grid gap-6 lg:grid-cols-3 xl:gap-x-12" >
           <div class="mb-6 lg:mb-0" onClick={()=>navigateToFrame("apartmentRoom")}>
             <div
               class="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
@@ -39,12 +43,11 @@ const RoomsDisplay = () => {
                 </div>
               </div>
               <div class="p-6">
-                <h5 class="mb-3 text-lg font-bold">Apartment</h5>
+                <h5 class="mb-3 text-lg lobster">Apartment</h5>
                 <p class="mb-4 text-neutral-500 dark:text-neutral-300">
-                  <small>Published <u>01.01.2024</u> by
-                    <Link to=""> Fuzon Corp.</Link></small>
+  
                 </p>
-                <p class="mb-4 pb-2">
+                <p class="mb-4 pb-2 geologica">
                   Ut pretium ultricies dignissim. Sed sit amet mi eget urna
                   placerat vulputate. Ut vulputate est non quam dignissim
                   elementum. Donec a ullamcorper diam.
@@ -72,12 +75,11 @@ const RoomsDisplay = () => {
                 </div>
               </div>
               <div class="p-6">
-                <h5 class="mb-3 text-lg font-bold">Deluxe Room</h5>
+                <h5 class="mb-3 text-lg lobster">Deluxe Room</h5>
                 <p class="mb-4 text-neutral-500 dark:text-neutral-300">
-                <small>Published <u>01.01.2024</u> by
-                    <Link to=""> Fuzon Corp.</Link></small>
+
                 </p>
-                <p class="mb-4 pb-2">
+                <p class="mb-4 pb-2 geologica">
                   Suspendisse in volutpat massa. Nulla facilisi. Sed aliquet
                   diam orci, nec ornare metus semper sed. Integer volutpat
                   ornare erat sit amet rutrum.
@@ -105,12 +107,11 @@ const RoomsDisplay = () => {
                 </div>
               </div>
               <div class="p-6">
-                <h5 class="mb-3 text-lg font-bold">Dormitory</h5>
+                <h5 class="mb-3 text-lg lobster">Dormitory</h5>
                 <p class="mb-4 text-neutral-500 dark:text-neutral-300">
-                <small>Published <u>01.01.2024</u> by
-                    <Link to=""> Fuzon Corp.</Link></small>
+
                 </p>
-                <p class="mb-4 pb-2">
+                <p class="mb-4 pb-2 geologica">
                   Curabitur tristique, mi a mollis sagittis, metus felis mattis
                   arcu, non vehicula nisl dui quis diam. Mauris ut risus eget
                   massa volutpat feugiat. Donec.
@@ -143,12 +144,11 @@ const RoomsDisplay = () => {
                 </div>
               </div>
               <div class="p-6">
-                <h5 class="mb-3 text-lg font-bold">Double Bed</h5>
+                <h5 class="mb-3 text-lg lobster">Double Bed</h5>
                 <p class="mb-4 text-neutral-500 dark:text-neutral-300">
-                <small>Published <u>01.01.2024</u> by
-                    <Link to=""> Fuzon Corp.</Link></small>
+
                 </p>
-                <p class="mb-4 pb-2">
+                <p class="mb-4 pb-2 geologica">
                   Ut pretium ultricies dignissim. Sed sit amet mi eget urna
                   placerat vulputate. Ut vulputate est non quam dignissim
                   elementum. Donec a ullamcorper diam.
@@ -176,12 +176,11 @@ const RoomsDisplay = () => {
                 </div>
               </div>
               <div class="p-6">
-                <h5 class="mb-3 text-lg font-bold">Family Size</h5>
+                <h5 class="mb-3 text-lg lobster">Family Size</h5>
                 <p class="mb-4 text-neutral-500 dark:text-neutral-300">
-                <small>Published <u>01.01.2024</u> by
-                    <Link to=""> Fuzon Corp.</Link></small>
+
                 </p>
-                <p class="mb-4 pb-2">
+                <p class="mb-4 pb-2 geologica">
                   Suspendisse in volutpat massa. Nulla facilisi. Sed aliquet
                   diam orci, nec ornare metus semper sed. Integer volutpat
                   ornare erat sit amet rutrum.
@@ -209,12 +208,11 @@ const RoomsDisplay = () => {
                 </div>
               </div>
               <div class="p-6">
-                <h5 class="mb-3 text-lg font-bold">Single Bed</h5>
+                <h5 class="mb-3 text-lg lobster">Single Bed</h5>
                 <p class="mb-4 text-neutral-500 dark:text-neutral-300">
-                <small>Published <u>01.01.2024</u> by
-                    <Link to=""> Fuzon Corp.</Link></small>
+
                 </p>
-                <p class="mb-4 pb-2">
+                <p class="mb-4 pb-2 geologica">
                   Curabitur tristique, mi a mollis sagittis, metus felis mattis
                   arcu, non vehicula nisl dui quis diam. Mauris ut risus eget
                   massa volutpat feugiat. Donec.
@@ -246,12 +244,11 @@ const RoomsDisplay = () => {
                 </div>
               </div>
               <div class="p-6">
-                <h5 class="mb-3 text-lg font-bold">Suite</h5>
+                <h5 class="mb-3 text-lg lobster">Suite</h5>
                 <p class="mb-4 text-neutral-500 dark:text-neutral-300">
-                <small>Published <u>01.01.2024</u> by
-                    <Link to=""> Fuzon Corp.</Link></small>
+
                 </p>
-                <p class="mb-4 pb-2">
+                <p class="mb-4 pb-2 geologica">
                   Ut pretium ultricies dignissim. Sed sit amet mi eget urna
                   placerat vulputate. Ut vulputate est non quam dignissim
                   elementum. Donec a ullamcorper diam.
@@ -265,6 +262,7 @@ const RoomsDisplay = () => {
         </div>
       </section>
     </div>
+    </>
   );
 }
 
