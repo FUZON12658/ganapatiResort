@@ -1,7 +1,8 @@
 export default () => {
   return (
-    <div class="container my-24 mx-auto md:px-6">
-      <section class="mb-32">
+    <div className="bg-gray-900">
+    <div class="container py-24 mx-auto md:px-6">
+      <section class="">
         <div class="flex flex-wrap">
           <div class="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
             <div class="flex lg:py-12">
@@ -31,6 +32,7 @@ export default () => {
           </div>
         </div>
       </section>
+    </div>
     </div>
   )
 }
