@@ -1,3 +1,6 @@
+import heroImage from "../../Images/resortLogo.png"
+
+
 export default () => {
   return (
     <div className="bg-gray-900">
@@ -6,8 +9,8 @@ export default () => {
         <div class="flex flex-wrap">
           <div class="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
             <div class="flex lg:py-12">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/people/033.jpg"
-                class="w-full rounded-lg shadow-lg dark:shadow-black/20 lg:ml-[50px] z-[10]" alt="image" />
+              <img src={heroImage}
+                class="w-full rounded-lg shadow-lg dark:shadow-black/20 lg:ml-[50px] z-[10] bg-white" alt="image" />
             </div>
           </div>
           <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
