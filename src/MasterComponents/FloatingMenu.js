@@ -53,25 +53,25 @@ const FloatingMenu = () => {
       <div className="flex flex-col mt-2 sm:flex-row items-center justify-center w-full h-full sm:gap-48 xl:text-xl xl:leading-10 2xl:text-2xl 2xl:leading-10" style={{fontFamily:"Lobster"}}>
         <ul className='hidden sm:flow-root '>
           <li><Link className="hover:text-orange-500"  to="/" onClick={renderHamburgerMenuTrue}>Home</Link></li>
-          <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>About</Link></li>
+          <li><Link className="hover:text-orange-500"  to="/about" onClick={renderHamburgerMenuTrue}>About</Link></li>
           <li><Link className="hover:text-orange-500"  to="/rooms" onClick={renderHamburgerMenuTrue}>Room & Suites</Link></li>
           <li><Link className="hover:text-orange-500"  to="/meetingsAndEvents" onClick={renderHamburgerMenuTrue}>Meetings & Events</Link></li>
         </ul>
         <ul className='hidden sm:flow-root'>
-          <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>Wedding</Link></li>
-          <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>Lounge & Bar</Link></li>
-          <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>Experiences</Link></li>
-          <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>Contact</Link></li>
+          <li><Link className="hover:text-orange-500"  to="/weddings" onClick={renderHamburgerMenuTrue}>Wedding</Link></li>
+          <li><Link className="hover:text-orange-500"  to="/loungeBar" onClick={renderHamburgerMenuTrue}>Lounge & Bar</Link></li>
+          <li><Link className="hover:text-orange-500"  to="/experiences" onClick={renderHamburgerMenuTrue}>Experiences</Link></li>
+          <li><Link className="hover:text-orange-500"  to="/contacts" onClick={renderHamburgerMenuTrue}>Contact</Link></li>
         </ul>
         <ul className='sm:hidden'>
           <li><Link className="hover:text-orange-500"  to="/" onClick={renderHamburgerMenuTrue}>Home</Link></li>
-          <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>About</Link></li>
+          <li><Link className="hover:text-orange-500"  to="/about" onClick={renderHamburgerMenuTrue}>About</Link></li>
           <li><Link className="hover:text-orange-500"  to="/rooms" onClick={renderHamburgerMenuTrue}>Room & Suites</Link></li>
           <li><Link className="hover:text-orange-500"  to="/meetingsAndEvents" onClick={renderHamburgerMenuTrue}>Meetings & Events</Link></li>
-          <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>Wedding</Link></li>
-          <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>Lounge & Bar</Link></li>
-          <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>Experiences</Link></li>
-          <li><Link className="hover:text-orange-500"  to="" onClick={renderHamburgerMenuTrue}>Contact</Link></li>
+          <li><Link className="hover:text-orange-500"  to="/weddings" onClick={renderHamburgerMenuTrue}>Wedding</Link></li>
+          <li><Link className="hover:text-orange-500"  to="/loungeBar" onClick={renderHamburgerMenuTrue}>Lounge & Bar</Link></li>
+          <li><Link className="hover:text-orange-500"  to="/experiences" onClick={renderHamburgerMenuTrue}>Experiences</Link></li>
+          <li><Link className="hover:text-orange-500"  to="/contacts" onClick={renderHamburgerMenuTrue}>Contact</Link></li>
         </ul>
       </div>
       </div>

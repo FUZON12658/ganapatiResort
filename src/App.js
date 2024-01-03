@@ -10,6 +10,9 @@ import { HamburgerMenu } from './MasterComponents/HamburgerMenu';
 import RoomsDisplay from './Components/RoomsAndSuites/RoomsDisplay';
 import PhotoGallery from './Components/Gallery/PhotoGallery';
 import MeetingsAndEvents from './Components/MeetingsEvents/MeetingsAndEvents';
+import WeddingDisplay from './Components/Wedding/WeddingDisplay';
+import LoungeBar from './Components/LoungeAndBar/LoungeBar';
+import About from './Components/About/About';
 
 
 
@@ -20,9 +23,12 @@ function App() {
   <FloatingMenu/>
   <Routes>
     <Route exact path="/" element={<Home/>}></Route>
+    <Route exact path="/about" element={<About/>}></Route>
     <Route exact path="/rooms" element={<RoomsDisplay/>}></Route>
     <Route exact path="/roomDetails" element={<PhotoGallery/>}></Route>
     <Route exact path="/meetingsAndEvents" element={<MeetingsAndEvents/>}></Route>
+    <Route exact path="/weddings" element={<WeddingDisplay/>}></Route>
+    <Route exact path="/loungeBar" element={<LoungeBar/>}></Route>
   </Routes>
   <Footer/>
   </Router>

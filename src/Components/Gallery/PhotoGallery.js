@@ -51,14 +51,17 @@ import suiteRoomOne from "../../Images/suiteRoom/suiteRoom1.jpg";
 import suiteRoomTwo from "../../Images/suiteRoom/suiteRoom2.jpg";
 import suiteRoomThree from "../../Images/suiteRoom/suiteRoom3.jpg";
 import { useLocation } from "react-router-dom";
+import ScrollingLogo from "../../MasterComponents/ScrollingLogo";
 
 const PhotoGallery = () => {
   const location = useLocation();
   const roomType = new URLSearchParams(location.search).get("roomType");
 
+
   if (roomType === "apartmentRoom") {
     return (
       <>
+      <ScrollingLogo/>
         <div className="sm:grid grid-cols-2 md:grid-cols-3 gap-4 items-center sm:mt-56 hidden">
           <div className="grid gap-4">
             <div>
@@ -223,6 +226,7 @@ const PhotoGallery = () => {
   } else if (roomType === "deluxeRoom") {
     return (
       <>
+      <ScrollingLogo/>
         <div className="hidden sm:grid grid-cols-2 gap-4 items-center sm:mt-56">
           <div className="grid gap-4">
             <div>
@@ -372,6 +376,7 @@ const PhotoGallery = () => {
   } else if (roomType === "doubleBedRoom") {
     return (
       <>
+      <ScrollingLogo/>
         <div className="hidden sm:grid grid-cols-2 gap-4 items-center sm:mt-56">
           <div className="grid  gap-4">
             <div>
@@ -545,6 +550,7 @@ const PhotoGallery = () => {
   } else if (roomType === "dormitoryRoom") {
     return (
       <>
+      <ScrollingLogo/>
         <div className="hidden sm:grid grid-cols-2 md:grid-cols-4 gap-4 sm:mt-56">
           <div className="grid gap-4">
             <div>
@@ -807,6 +813,7 @@ const PhotoGallery = () => {
   } else if (roomType === "familyRoom") {
     return (
       <>
+      <ScrollingLogo/>
         <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-4 sm:mt-56">
           <div className="grid gap-4">
             <div>
@@ -958,6 +965,7 @@ const PhotoGallery = () => {
   } else if (roomType === "singleRoom") {
     return (
       <>
+      <ScrollingLogo/>
         <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-1 sm:gap-4 sm:mt-56">
           <div className="grid gap-4">
             <div>
@@ -1096,6 +1104,7 @@ const PhotoGallery = () => {
   } else if (roomType === "suiteRoom") {
     return (
       <>
+      <ScrollingLogo/>
         <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-4 sm:mt-56">
           <div className="grid gap-4">
             <div>

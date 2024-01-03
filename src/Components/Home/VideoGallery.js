@@ -1,6 +1,7 @@
 
 import React from "react";
 import { TECarousel, TECarouselItem } from "tw-elements-react";
+import heroVideoThree from "../../Videos/heroVideoThree.mp4";
 
 const VideoGallery = ()=>{
   return (
@@ -47,7 +48,7 @@ const VideoGallery = ()=>{
           >
             <video className="w-full" autoPlay loop muted>
               <source
-                src="https://tecdn.b-cdn.net/img/video/Agua-natural.mp4"
+                src={heroVideoThree}
                 type="video/mp4"
               />
             </video>
