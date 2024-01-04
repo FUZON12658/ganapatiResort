@@ -13,10 +13,14 @@ import MeetingsAndEvents from './Components/MeetingsEvents/MeetingsAndEvents';
 import WeddingDisplay from './Components/Wedding/WeddingDisplay';
 import LoungeBar from './Components/LoungeAndBar/LoungeBar';
 import About from './Components/About/About';
+import { useScrollToTop } from './MasterComponents/useScrollToTop';
+import { useEffect } from 'react';
+import Contact from './Components/Contact/Contact';
 
 
 
 function App() {
+
   return (
   <>
   <Router>
@@ -29,6 +33,7 @@ function App() {
     <Route exact path="/meetingsAndEvents" element={<MeetingsAndEvents/>}></Route>
     <Route exact path="/weddings" element={<WeddingDisplay/>}></Route>
     <Route exact path="/loungeBar" element={<LoungeBar/>}></Route>
+    <Route exact path='/contacts' element={<Contact/>}></Route>
   </Routes>
   <Footer/>
   </Router>

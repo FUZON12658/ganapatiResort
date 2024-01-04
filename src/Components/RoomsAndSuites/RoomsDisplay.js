@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import apartmentHero from "../../Images/apartmentRoom/apartmentRoom1.jpg"
 import deluxeHero from "../../Images/deluxeRoom/deluxeRoom1.jpg"
 import dormitoryHero from "../../Images/dormitoryRoom/dormitoryRoom1.jpg"
@@ -8,10 +8,15 @@ import singleHero from "../../Images/singleRoom/singleRoom1.jpg"
 import suiteHero from "../../Images/suiteRoom/suiteRoom1.jpg"
 import { Link, useNavigate } from 'react-router-dom'
 import ScrollingLogo from '../../MasterComponents/ScrollingLogo'
+import { useScrollToTop } from '../../MasterComponents/useScrollToTop'
 
 
 const RoomsDisplay = () => {
   const navigate = useNavigate();
+
+  useEffect(()=>{
+    useScrollToTop();
+  },[])
 
   const navigateToFrame = (roomType) => {
     navigate(`/roomDetails?roomType=${roomType}`);

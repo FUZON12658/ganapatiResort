@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import meetingsHero from "../../Images/meetings/meetings1.jpg"
 import meetingsOne from "../../Images/meetings/meetings2.jpg"
 import meetingsTwo from "../../Images/meetings/meetings3.jpg"
@@ -11,8 +11,15 @@ import weddingOne from "../../Images/wedding/wedding2.jpg"
 import weddingTwo from "../../Images/wedding/wedding3.jpg"
 import { TECarousel, TECarouselItem } from 'tw-elements-react'
 import ScrollingLogo from '../../MasterComponents/ScrollingLogo'
+import { useScrollToTop } from '../../MasterComponents/useScrollToTop'
+
 
 const WeddingDisplay = () => {
+
+  useEffect(()=>{
+    useScrollToTop();
+  },[])
+
   return (
     <div className="sm:my-24 sm:mt-0">
       <ScrollingLogo/>

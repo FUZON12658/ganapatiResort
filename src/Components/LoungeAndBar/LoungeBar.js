@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import meetingsHero from "../../Images/meetings/meetings1.jpg"
 import meetingsOne from "../../Images/meetings/meetings2.jpg"
 import meetingsTwo from "../../Images/meetings/meetings3.jpg"
@@ -7,8 +7,14 @@ import eventsOne from "../../Images/events/events2.jpg"
 import eventsTwo from "../../Images/events/events3.jpg"
 import { TECarousel, TECarouselItem } from 'tw-elements-react'
 import ScrollingLogo from '../../MasterComponents/ScrollingLogo'
+import { useScrollToTop } from '../../MasterComponents/useScrollToTop'
+
 
 const LoungeBar = () => {
+  useEffect(()=>{
+    useScrollToTop();
+  },[])
+
   return (
     <div className="sm:my-24 sm:mt-0">
       <ScrollingLogo/>
