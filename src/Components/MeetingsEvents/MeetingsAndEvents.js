@@ -20,7 +20,7 @@ const MeetingsAndEvents = () => {
       <section className="mb-32">
        
         <TECarousel showControls={false} showIndicators ride="carousel" className='flex items-center justify-center text-center'>
-        <div className="absolute  text-2xl sm:text-6xl lobster z-20 text-white">Meetings</div>
+        <div className="absolute  text-2xl sm:text-6xl lobster z-20 text-white">Jisu</div>
         <div className="absolute  text-xs sm:text-xl geologica z-20 text-white font-bold translate-y-9 sm:translate-y-20">
           A place where you can engineer great plans and make great decisions
         </div>
@@ -67,7 +67,7 @@ const MeetingsAndEvents = () => {
         </h1>
     
         <p className='geologica'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+          Jisu fucche guiye meow madan consectetur adipisicing elit. Eligendi
           harum tempore cupiditate asperiores provident, itaque, quo ex iusto
           rerum voluptatum delectus corporis quisquam maxime a ipsam nisi
           sapiente qui optio! Dignissimos harum quod culpa officiis suscipit
