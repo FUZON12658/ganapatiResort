@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import logo from "../Images/resortLogo.png";
-import React, { useEffect, useState } from 'react';
+import React from 'react'
 
 const ScrollingLogo = () => {
-
   return (
     <div className={`w-full relative z-30   flex justify-center`}>
       <div className={`flex flex-col items-center justify-center sm:flex sm:absolute`}>

@@ -1,12 +1,9 @@
-import React, { useEffect } from "react";
+import React  from "react";
 import ScrollingLogo from "../../MasterComponents/ScrollingLogo";
 import { useScrollToTop } from "../../MasterComponents/useScrollToTop";
 
 const About = () => {
-
-  useEffect(()=>{
-    useScrollToTop();
-  },[])
+  useScrollToTop();
 
   return (
     <div>

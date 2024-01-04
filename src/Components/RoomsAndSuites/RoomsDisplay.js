@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import apartmentHero from "../../Images/apartmentRoom/apartmentRoom1.jpg"
 import deluxeHero from "../../Images/deluxeRoom/deluxeRoom1.jpg"
 import dormitoryHero from "../../Images/dormitoryRoom/dormitoryRoom1.jpg"
@@ -14,9 +14,7 @@ import { useScrollToTop } from '../../MasterComponents/useScrollToTop'
 const RoomsDisplay = () => {
   const navigate = useNavigate();
 
-  useEffect(()=>{
-    useScrollToTop();
-  },[])
+  useScrollToTop();
 
   const navigateToFrame = (roomType) => {
     navigate(`/roomDetails?roomType=${roomType}`);

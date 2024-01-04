@@ -9,9 +9,9 @@ import { useScrollToTop } from '../MasterComponents/useScrollToTop'
 
 
 const Home = () => {
-  useEffect(()=>{
-    useScrollToTop();
-  })
+
+  useScrollToTop();
+
   return (
     <>
     <ScrollingLogo/>

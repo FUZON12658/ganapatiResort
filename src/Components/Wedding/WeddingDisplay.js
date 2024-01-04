@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React  from 'react'
 import meetingsHero from "../../Images/meetings/meetings1.jpg"
 import meetingsOne from "../../Images/meetings/meetings2.jpg"
 import meetingsTwo from "../../Images/meetings/meetings3.jpg"
@@ -16,9 +16,7 @@ import { useScrollToTop } from '../../MasterComponents/useScrollToTop'
 
 const WeddingDisplay = () => {
 
-  useEffect(()=>{
-    useScrollToTop();
-  },[])
+  useScrollToTop();
 
   return (
     <div className="sm:my-24 sm:mt-0">
