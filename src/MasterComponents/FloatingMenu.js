@@ -252,7 +252,7 @@ const FloatingMenu = () => {
           <div
             className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3"
           >
-            <Link to="mailto:contact@ganapatihotelandresort.com">Email Us</Link>
+            <Link to="mailto:contact@ganapatihotelandresort.com">Book Now</Link>
           </div>
           <div
             className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3"
@@ -277,7 +277,7 @@ const FloatingMenu = () => {
           <div
             className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3"
           >
-            <Link to="mailto:contact@ganapatihotelandresort.com">Email Us</Link>
+            <Link to="mailto:contact@ganapatihotelandresort.com">Book Now</Link>
           </div>
           <div
             className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3"

@@ -10,7 +10,6 @@ import exp8 from "../../Images/experiences/8.jpg";
 import exp9 from "../../Images/experiences/9.jpg";
 import exp10 from "../../Images/experiences/10.jpg";
 
-
 import { TECarousel, TECarouselItem } from "tw-elements-react";
 import ScrollingLogo from "../../MasterComponents/ScrollingLogo";
 
@@ -157,8 +156,30 @@ const Experiences = () => {
           </h1>
 
           <p className="geologica text-sm sm:text-base">
-          Pick up and Drop off service almost everywhere in Nepal on request.
+            Pick up and Drop off service almost everywhere in Nepal on request.
           </p>
+        </div>
+
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Nearest Attractions and Activities
+          </h1>
+
+          <p className="geologica text-sm sm:text-base">
+            1. Siddha Baba temple hiking
+          </p>
+          <p className="geologica text-sm sm:text-base">2. Bharat Taal visit</p>
+          <p className="geologica text-sm sm:text-base">3. Kala Ghar</p>
+            <div
+              class="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden"
+              style={{ paddingTop: "56.25%" }}
+            >
+            <iframe
+                class="embed-responsive-item absolute bottom-0 left-0 right-0 top-0 h-full w-full rounded-lg mb-10"
+                src="https://www.youtube.com/embed/5ecdh-820Rw?si=L73TkowYUeshGQ1b"
+                allowfullscreen
+              ></iframe>
+            </div>
         </div>
       </section>
     </div>
