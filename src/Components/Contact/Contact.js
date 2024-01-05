@@ -1,7 +1,9 @@
 import React from "react";
 import ScrollingLogo from "../../MasterComponents/ScrollingLogo";
+import { useScrollToTop } from "../../MasterComponents/useScrollToTop";
 
 const Contact = () => {
+  useScrollToTop();
   return (
     <>
     <ScrollingLogo/>

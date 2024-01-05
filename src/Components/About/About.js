@@ -1,9 +1,39 @@
-import React  from "react";
+import React from "react";
 import ScrollingLogo from "../../MasterComponents/ScrollingLogo";
+import nareshImage from "../../Images/aboutUs/naresh.jpg";
+import krishnaImage from "../../Images/aboutUs/krishna.jpg";
+import santoshImage from "../../Images/aboutUs/santosh.jpg"
 import { useScrollToTop } from "../../MasterComponents/useScrollToTop";
 
 const About = () => {
   useScrollToTop();
+
+  const people = [
+    {
+      img: nareshImage,
+      name: "Naresh K. Shrestha",
+      descriptionOne:
+        "Dear Valued Stakeholders, Welcome to GANAPATI HOTEL AND RESORT (GHAR) In today&#39;s competitive business environment, it is extremely important for us to maintain a leading position in Nepal from the beautiful landscape of SINDHULI, creating a difference in business setting to attain sustainable growth and profit, when it comes to planning, development and the management of hospitality facilities, no one does it better than GANAPATI in SINDHULI.",
+      descriptionTwo:
+        " We pride our self on our different stakeholders, GM, partners and guest. Our expertise lies on our dedicated team of employees. We cordially invite you to join us, pay your visit.",
+    },
+    {
+      img: santoshImage,
+      name: "Santosh Sharma",
+      descriptionOne:
+        "Ganapati Hotel and Resort is in Sindhuli, in the fertile, subtropical inner terai region of Nepal. Situated to the northern east of the capital city, the resort is easily accessible from India or Kathmandu, offering guests a sophisticated and thrilling getaway in a BP Highway. Luxurious accommodation, superb leisure facilities and top-class dining options make our facility a perfect venue for holidays, quick breaks, conferences, wedding and all kind of celebrations.",
+      descriptionTwo:
+        "We aim to support the development of tourism sector. We are proud of our success on our different stakeholders, local community, partners and guest. Our expertise lies on our dedicated team of workforce. We warmly invite you to join us and experience the differences!",
+    },
+    {
+      img: krishnaImage,
+      name: "Krishna K. Shrestha",
+      descriptionOne:
+        "If youve stayed with us and have been our guest previously, we look forward to welcoming you back once again to GANAPATI HOTEL AND RESORT (GHAR). My staff and I take great pleasure in seeing our customers back, and having the opportunity to extend our unique brand of Nepalese hospitality.The hotel is dedicated to our guest, by demonstrating our policy of 100% Guest Satisfaction and consistently improving our services and amenities we provide at your service.",
+      descriptionTwo:
+        "Ganapati will be expanding its wings immediately on academic sectors by exploring the technical courses on different hospitality sectors like Front office, Service, Production and Housekeeping. Please feel free to share with us any suggestions or ideas that may improve the quality of our service we provide. On behalf of Management, I look forward to welcoming you here for an enjoyable stay. We invite you to experience hospitality at its finest at GANAPATI.",
+    },
+  ];
 
   return (
     <div>
@@ -26,192 +56,53 @@ const About = () => {
       </div>
       <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto">
         <h1 className="mb-6 mt-10 text-3xl font-bold lobster text-center">
-          A place where you can engineer great plans and make great decisions
+          Have a luxurious experience
         </h1>
 
         <p className="geologica">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
-          harum tempore cupiditate asperiores provident, itaque, quo ex iusto
-          rerum voluptatum delectus corporis quisquam maxime a ipsam nisi
-          sapiente qui optio! Dignissimos harum quod culpa officiis suscipit
-          soluta labore! Expedita quas, nesciunt similique autem, sunt,
-          doloribus pariatur maxime qui sint id enim. Placeat, maxime labore.
-          Dolores ex provident ipsa impedit, omnis magni earum. Sed fuga ex
-          ducimus consequatur corporis, architecto nesciunt vitae ipsum
-          consequuntur perspiciatis nulla esse voluptatem quos dolorum delectus
-          similique eum vero in est velit quasi pariatur blanditiis incidunt
-          quam.
+          Ganapati Hotel and Resort is newly established resort in Sindhuli
+          district, in inner Terai region of Janakpur, Zone. This historical
+          place is nearly 185 km far from the country’s capital Kathmandu
+          traveling from recently constructed BP Highway. The resort aims to
+          provide the best hospitality service in Nepal from the historical
+          place of Sindhuli. We offer luxurious, superb leisure facilities and
+          top class dining options to make our facility perfect venue for
+          holiday package, quick breaks, conferences, wedding and all kind of
+          celebrations. We warmly invite you to join us and experience the
+          differences!
         </p>
       </div>
-      <div className="bg-gray-900">
-        <div className=" container mt-24 sm:mt-56 mx-auto md:px-6">
-          <section className="text-center">
-            <h2 className="mb-12 pt-12 text-3xl font-bold text-white">
-              Meet the{" "}
-              <u className="text-primary dark:text-primary-400">team</u>
-            </h2>
-
-            <div className="lg:gap-xl-12 grid gap-x-6 md:grid-cols-3 xl:grid-cols-4">
-              <div className="mb-12">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/2.jpg"
-                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
-                  alt=""
-                  style={{ maxWidth: "100px" }}
-                />
-
-                <p className="mb-2 text-white font-bold">John Doe</p>
-                <p className="text-neutral-500 dark:text-neutral-300">
-                  Co-founder
-                </p>
+      {people.map((person) => (
+        <div class="container my-24 mx-auto md:px-6">
+          <section class="mb-32">
+            <div class="flex flex-wrap">
+              <div class="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
+                <div class="flex lg:py-12">
+                  <img
+                    src={person.img}
+                    class="z-[10] w-full rounded-lg shadow-lg dark:shadow-black/20 lg:ml-[50px]"
+                    alt="image"
+                  />
+                </div>
               </div>
 
-              <div className="mb-12">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/5.jpg"
-                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
-                  alt=""
-                  style={{ maxWidth: "100px" }}
-                />
-
-                <p className="mb-2 text-white font-bold">Lisa Ferrol</p>
-                <p className="text-neutral-500 dark:text-neutral-300">
-                  Web designer
-                </p>
-              </div>
-
-              <div className="mb-12">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg"
-                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
-                  alt=""
-                  style={{ maxWidth: "100px" }}
-                />
-                <p className="mb-2 text-white font-bold">Maria Smith</p>
-                <p className="text-neutral-500 dark:text-neutral-300">
-                  Senior consultant
-                </p>
-              </div>
-              <div className="mb-12">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/7.jpg"
-                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
-                  alt=""
-                  style={{ maxWidth: "100px" }}
-                />
-                <p className="mb-2 text-white font-bold">Agatha Bevos</p>
-                <p className="text-neutral-500 dark:text-neutral-300">
-                  Co-founder
-                </p>
-              </div>
-
-              <div className="mb-12">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/8.jpg"
-                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
-                  alt=""
-                  style={{ maxWidth: "100px" }}
-                />
-                <p className="mb-2 text-white font-bold">Darren Randolph</p>
-                <p className="text-neutral-500 dark:text-neutral-300">
-                  Marketing expert
-                </p>
-              </div>
-
-              <div className="mb-12">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/9.jpg"
-                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
-                  alt=""
-                  style={{ maxWidth: "100px" }}
-                />
-                <p className="mb-2 text-white font-bold">Soraya Letto</p>
-                <p className="text-neutral-500 dark:text-neutral-300">
-                  SEO expert
-                </p>
-              </div>
-
-              <div className="mb-12">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/10.jpg"
-                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
-                  alt=""
-                  style={{ maxWidth: "100px" }}
-                />
-                <p className="mb-2 text-white font-bold">Maliha Welch</p>
-                <p className="text-neutral-500 dark:text-neutral-300">
-                  Web designer
-                </p>
-              </div>
-
-              <div className="mb-12">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/11.jpg"
-                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
-                  alt=""
-                  style={{ maxWidth: "100px" }}
-                />
-                <p className="mb-2 text-white font-bold">Zeynep Dudley</p>
-                <p className="text-neutral-500 dark:text-neutral-300">
-                  Web developer
-                </p>
-              </div>
-
-              <div className="mb-12">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/12.jpg"
-                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
-                  alt=""
-                  style={{ maxWidth: "100px" }}
-                />
-                <p className="mb-2 text-white font-bold">Avaya Hills</p>
-                <p className="text-neutral-500 dark:text-neutral-300">
-                  Copywritter
-                </p>
-              </div>
-
-              <div className="mb-12">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/13.jpg"
-                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
-                  alt=""
-                  style={{ maxWidth: "100px" }}
-                />
-                <p className="mb-2 text-white font-bold">Thierry Fischer</p>
-                <p className="text-neutral-500 dark:text-neutral-300">
-                  Senior consultant
-                </p>
-              </div>
-
-              <div className="mb-12">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/14.jpg"
-                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
-                  alt=""
-                  style={{ maxWidth: "100px" }}
-                />
-                <p className="mb-2 text-white font-bold">Aisling Sheldon</p>
-                <p className="text-neutral-500 dark:text-neutral-300">
-                  Senior developer
-                </p>
-              </div>
-
-              <div className="mb-12">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/15.jpg"
-                  className="mx-auto mb-4 rounded-full shadow-lg dark:shadow-black/20"
-                  alt=""
-                  style={{ maxWidth: "100px" }}
-                />
-                <p className="mb-2 text-white font-bold">Ayat Black</p>
-                <p className="text-neutral-500 dark:text-neutral-300">
-                  Web designer
-                </p>
+              <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+                <div class="flex h-full items-center rounded-lg bg-orange-500 p-6 text-center text-white lg:pl-12 lg:text-left">
+                  <div class="lg:pl-12">
+                    <h2 class="mb-8 text-3xl font-bold">{person.name}</h2>
+                    <p class="mb-8 pb-2 lg:pb-0">
+                     {person.descriptionOne}
+                    </p>
+                    <p>
+                    {person.descriptionTwo}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
         </div>
-      </div>
+      ))}
     </div>
   );
 };
