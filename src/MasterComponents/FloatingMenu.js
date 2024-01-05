@@ -74,13 +74,13 @@ const FloatingMenu = () => {
             ></i>
           </div>
           <div
-            className="flex flex-col mt-2 sm:flex-row items-center justify-center w-full h-full text-lg sm:gap-48 xl:text-xl xl:leading-10 2xl:text-2xl 2xl:leading-10"
+            className="flex flex-col mt-2 sm:flex-row items-center justify-center w-full h-full text-lg sm:gap-48 xl:text-2xl xl:leading-10 2xl:text-3xl 2xl:leading-10"
             style={{ fontFamily: "Lobster" }}
           >
             <ul className="hidden sm:flow-root ">
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 mb-10"
                   to="/"
                   onClick={renderHamburgerMenuTrue}
                 >
@@ -89,7 +89,7 @@ const FloatingMenu = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 mb-10"
                   to="/about"
                   onClick={renderHamburgerMenuTrue}
                 >
@@ -98,7 +98,7 @@ const FloatingMenu = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 mb-10"
                   to="/rooms"
                   onClick={renderHamburgerMenuTrue}
                 >
@@ -107,7 +107,7 @@ const FloatingMenu = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 mb-10"
                   to="/meetingsAndEvents"
                   onClick={renderHamburgerMenuTrue}
                 >
@@ -118,7 +118,7 @@ const FloatingMenu = () => {
             <ul className="hidden sm:flow-root">
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 mb-10"
                   to="/weddings"
                   onClick={renderHamburgerMenuTrue}
                 >
@@ -127,7 +127,7 @@ const FloatingMenu = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 mb-10"
                   to="/loungeBar"
                   onClick={renderHamburgerMenuTrue}
                 >
@@ -136,7 +136,7 @@ const FloatingMenu = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 mb-10"
                   to="/experiences"
                   onClick={renderHamburgerMenuTrue}
                 >
@@ -145,7 +145,7 @@ const FloatingMenu = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 mb-10"
                   to="/contacts"
                   onClick={renderHamburgerMenuTrue}
                 >
@@ -156,7 +156,7 @@ const FloatingMenu = () => {
             <ul className="sm:hidden">
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 mb-10"
                   to="/"
                   onClick={renderHamburgerMenuTrue}
                 >
@@ -165,7 +165,7 @@ const FloatingMenu = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 mb-10"
                   to="/about"
                   onClick={renderHamburgerMenuTrue}
                 >
@@ -174,7 +174,7 @@ const FloatingMenu = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 mb-10"
                   to="/rooms"
                   onClick={renderHamburgerMenuTrue}
                 >
@@ -183,7 +183,7 @@ const FloatingMenu = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 mb-10"
                   to="/meetingsAndEvents"
                   onClick={renderHamburgerMenuTrue}
                 >
@@ -192,7 +192,7 @@ const FloatingMenu = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 mb-10"
                   to="/weddings"
                   onClick={renderHamburgerMenuTrue}
                 >
@@ -201,7 +201,7 @@ const FloatingMenu = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 mb-10"
                   to="/loungeBar"
                   onClick={renderHamburgerMenuTrue}
                 >
@@ -210,7 +210,7 @@ const FloatingMenu = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 mb-10"
                   to="/experiences"
                   onClick={renderHamburgerMenuTrue}
                 >
@@ -219,7 +219,7 @@ const FloatingMenu = () => {
               </li>
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 mb-10"
                   to="/contacts"
                   onClick={renderHamburgerMenuTrue}
                 >
