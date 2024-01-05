@@ -14,4 +14,26 @@
 .text-stroke {
   -webkit-text-stroke: 0.1px #000; /* Width and color of the stroke */
 }
+
+@keyframes blink {
+  0% {
+    stroke: orangered;
+  }
+  40% {
+    stroke: gray;
+  }
+  60% {
+    stroke: gray;
+  }
+  80% {
+    stroke: orangered;
+  }
+  100% {
+    stroke-opacity: orangered;
+  }
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
 @tailwind utilities;

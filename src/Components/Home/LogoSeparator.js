@@ -20,14 +20,11 @@ export default () => {
                   What are you waiting for?
                 </h2>
                 <p class="mb-6 pb-2 lg:pb-0">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Maxime, sint, repellat vel quo quisquam accusamus in qui at
-                  ipsa enim quibusdam illo laboriosam omnis. Labore itaque illum
-                  distinctio eum neque!
+                Discover serenity at Ganpati Resort - your ultimate escape from the chaos of everyday life. Immerse yourself in nature's embrace and experience tranquility like never before. Join us for a day of relaxation, adventure, and bliss. 
                 </p>
-                <Link to="tel:9805843762">
+                <Link to="tel:+977 9805843762">
                 <button type="button"
-                  class="rounded-full border-2 border-neutral-50 px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
+                  class="rounded-full border-2 border-neutral-50 px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-30 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-black-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
                   data-te-ripple-init data-te-ripple-color="light">
                   Call Now
                 </button>

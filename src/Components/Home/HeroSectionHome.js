@@ -58,7 +58,7 @@ import { TECarousel, TECarouselItem } from "tw-elements-react";
 export default function CarouselCrossfade() {
   return (
     <>
-      <TECarousel showControls showIndicators crossfade interval={2000} ride="carousel">
+      <TECarousel showControls={false} showIndicators crossfade interval={2000} ride="carousel">
         <div className="relative w-full overflow-hidden after:clear-both after:block after:content-[''] xl:h-[100vh]">
           <TECarouselItem
             itemID={1}
@@ -91,11 +91,31 @@ export default function CarouselCrossfade() {
             />
           </TECarouselItem>
           <TECarouselItem
-            itemID={3}
+            itemID={4}
             className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
           >
             <img
               src={heroThree}
+              className="block w-full"
+              alt="..."
+            />
+          </TECarouselItem>
+          <TECarouselItem
+            itemID={5}
+            className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+          >
+            <img
+              src={heroFour}
+              className="block w-full"
+              alt="..."
+            />
+          </TECarouselItem>
+          <TECarouselItem
+            itemID={6}
+            className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+          >
+            <img
+              src={heroFive}
               className="block w-full"
               alt="..."
             />

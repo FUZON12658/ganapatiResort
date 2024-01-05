@@ -57,11 +57,10 @@ const PhotoGallery = () => {
   const location = useLocation();
   const roomType = new URLSearchParams(location.search).get("roomType");
 
-
   if (roomType === "apartmentRoom") {
     return (
       <>
-      <ScrollingLogo/>
+        <ScrollingLogo />
         <div className="sm:grid grid-cols-2 md:grid-cols-3 gap-4 items-center sm:mt-56 hidden">
           <div className="grid gap-4">
             <div>
@@ -169,45 +168,72 @@ const PhotoGallery = () => {
           </TECarousel>
         </div>
 
-        <div className="container flex flex-col my-10 mx-auto">
-          <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div className="overflow-hidden">
-                <table className="min-w-full text-left text-sm font-light">
-                  <thead className="border-b font-medium dark:border-neutral-500">
+        <div class="container mx-auto flex flex-col">
+          <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+              <div class="overflow-hidden">
+                <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                  <thead class="border-b font-medium dark:border-neutral-500">
                     <tr>
-                      <th scope="col" className="px-6 py-4">
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
                         #
                       </th>
-                      <th scope="col" className="px-6 py-4">
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
                         First
                       </th>
-                      <th scope="col" className="px-6 py-4">
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
                         Last
+                      </th>
+                      <th scope="col" class="px-6 py-4">
+                        Handle
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         1
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Mark</td>
-                      <td className="whitespace-nowrap px-6 py-4">Otto</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Mark
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Otto
+                      </td>
+                      <td class="whitespace-nowrap px-6 py-4">@mdo</td>
                     </tr>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         2
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Jacob</td>
-                      <td className="whitespace-nowrap px-6 py-4">Thornton</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Jacob
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Thornton
+                      </td>
+                      <td class="whitespace-nowrap px-6 py-4">@fat</td>
                     </tr>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         3
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Larry</td>
-                      <td className="whitespace-nowrap px-6 py-4">Wild</td>
+                      <td
+                        colspan="2"
+                        class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        Larry the Bird
+                      </td>
+                      <td class="whitespace-nowrap px-6 py-4">@twitter</td>
                     </tr>
                   </tbody>
                 </table>
@@ -220,7 +246,7 @@ const PhotoGallery = () => {
   } else if (roomType === "deluxeRoom") {
     return (
       <>
-      <ScrollingLogo/>
+        <ScrollingLogo />
         <div className="hidden sm:grid grid-cols-2 gap-4 items-center sm:mt-56">
           <div className="grid gap-4">
             <div>
@@ -370,7 +396,7 @@ const PhotoGallery = () => {
   } else if (roomType === "doubleBedRoom") {
     return (
       <>
-      <ScrollingLogo/>
+        <ScrollingLogo />
         <div className="hidden sm:grid grid-cols-2 gap-4 items-center sm:mt-56">
           <div className="grid  gap-4">
             <div>
@@ -544,7 +570,7 @@ const PhotoGallery = () => {
   } else if (roomType === "dormitoryRoom") {
     return (
       <>
-      <ScrollingLogo/>
+        <ScrollingLogo />
         <div className="hidden sm:grid grid-cols-2 md:grid-cols-4 gap-4 sm:mt-56">
           <div className="grid gap-4">
             <div>
@@ -807,7 +833,7 @@ const PhotoGallery = () => {
   } else if (roomType === "familyRoom") {
     return (
       <>
-      <ScrollingLogo/>
+        <ScrollingLogo />
         <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-4 sm:mt-56">
           <div className="grid gap-4">
             <div>
@@ -959,7 +985,7 @@ const PhotoGallery = () => {
   } else if (roomType === "singleRoom") {
     return (
       <>
-      <ScrollingLogo/>
+        <ScrollingLogo />
         <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-1 sm:gap-4 sm:mt-56">
           <div className="grid gap-4">
             <div>
@@ -1098,7 +1124,7 @@ const PhotoGallery = () => {
   } else if (roomType === "suiteRoom") {
     return (
       <>
-      <ScrollingLogo/>
+        <ScrollingLogo />
         <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-4 sm:mt-56">
           <div className="grid gap-4">
             <div>
