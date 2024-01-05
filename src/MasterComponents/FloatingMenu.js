@@ -246,7 +246,7 @@ const FloatingMenu = () => {
               <Link>Menu</Link>
             </div>
             <div className="sm:hidden">
-              <i className="fa-solid fa-bars"></i>
+              <i className="fa-solid fa-bars" onClick={renderHamburgerMenuTrue}></i>
             </div>
           </div>
           <div
@@ -271,7 +271,7 @@ const FloatingMenu = () => {
               <Link>Menu</Link>
             </div>
             <div className="sm:hidden">
-              <i className="fa-solid fa-bars"></i>
+              <i className="fa-solid fa-bars" onClick={renderHamburgerMenuTrue}></i>
             </div>
           </div>
           <div
