@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollingLogo from "../../MasterComponents/ScrollingLogo";
 import { useScrollToTop } from "../../MasterComponents/useScrollToTop";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   useScrollToTop();
@@ -14,11 +15,12 @@ const Contact = () => {
             <div class="block w-full shrink-0 grow-0 basis-auto lg:flex lg:w-6/12 xl:w-4/12">
               <div class="h-[500px] w-full">
                 <iframe
-                  src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14190.399391599589!2d85.9130859!3d27.2317104!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb8dcea09a505b%3A0x7b5baaaa14994cc1!2sGanapati%20Hotel%20%26%20Resort!5e0!3m2!1sen!2snp!4v1704472043433!5m2!1sen!2snp"
                   class="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg"
                   frameborder="0"
                   allowfullscreen
                 ></iframe>
+
               </div>
             </div>
             <div class="w-full shrink-0 grow-0 basis-auto lg:w-6/12 xl:w-8/12">
@@ -45,13 +47,13 @@ const Contact = () => {
                     </div>
                     <div class="ml-6 grow">
                       <p class="mb-2 font-bold dark:text-white">
-                        Technical support
+                        General Information
                       </p>
                       <p class="text-neutral-500 dark:text-neutral-200">
-                        support@example.com
+                        info@ganapatihotelandresort.com
                       </p>
                       <p class="text-neutral-500 dark:text-neutral-200">
-                        +1 234-567-89
+                      <Link to="tel:+9779802020346">+977 9802020346</Link>
                       </p>
                     </div>
                   </div>
@@ -78,75 +80,13 @@ const Contact = () => {
                     </div>
                     <div class="ml-6 grow">
                       <p class="mb-2 font-bold dark:text-white">
-                        Sales questions
+                        For Booking
                       </p>
                       <p class="text-neutral-500 dark:text-neutral-200">
-                        sales@example.com
+                        contact@ganapatihotelandresort.com
                       </p>
                       <p class="text-neutral-500 dark:text-neutral-200">
-                        +1 234-567-89
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:mb-0 xl:w-6/12 xl:px-12">
-                  <div class="align-start flex">
-                    <div class="shrink-0">
-                      <div class="inline-block rounded-md bg-primary-100 p-4 text-primary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="2"
-                          stroke="currentColor"
-                          class="h-6 w-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="ml-6 grow">
-                      <p class="mb-2 font-bold dark:text-white">Press</p>
-                      <p class="text-neutral-500 dark:text-neutral-200">
-                        press@example.com
-                      </p>
-                      <p class="text-neutral-500 dark:text-neutral-200">
-                        +1 234-567-89
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:w-6/12 xl:px-12">
-                  <div class="align-start flex">
-                    <div class="shrink-0">
-                      <div class="inline-block rounded-md bg-primary-100 p-4 text-primary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="2"
-                          stroke="currentColor"
-                          class="h-6 w-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M12 12.75c1.148 0 2.278.08 3.383.237 1.037.146 1.866.966 1.866 2.013 0 3.728-2.35 6.75-5.25 6.75S6.75 18.728 6.75 15c0-1.046.83-1.867 1.866-2.013A24.204 24.204 0 0112 12.75zm0 0c2.883 0 5.647.508 8.207 1.44a23.91 23.91 0 01-1.152 6.06M12 12.75c-2.883 0-5.647.508-8.208 1.44.125 2.104.52 4.136 1.153 6.06M12 12.75a2.25 2.25 0 002.248-2.354M12 12.75a2.25 2.25 0 01-2.248-2.354M12 8.25c.995 0 1.971-.08 2.922-.236.403-.066.74-.358.795-.762a3.778 3.778 0 00-.399-2.25M12 8.25c-.995 0-1.97-.08-2.922-.236-.402-.066-.74-.358-.795-.762a3.734 3.734 0 01.4-2.253M12 8.25a2.25 2.25 0 00-2.248 2.146M12 8.25a2.25 2.25 0 012.248 2.146M8.683 5a6.032 6.032 0 01-1.155-1.002c.07-.63.27-1.222.574-1.747m.581 2.749A3.75 3.75 0 0115.318 5m0 0c.427-.283.815-.62 1.155-.999a4.471 4.471 0 00-.575-1.752M4.921 6a24.048 24.048 0 00-.392 3.314c1.668.546 3.416.914 5.223 1.082M19.08 6c.205 1.08.337 2.187.392 3.314a23.882 23.882 0 01-5.223 1.082"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="ml-6 grow">
-                      <p class="mb-2 font-bold dark:text-white">Bug report</p>
-                      <p class="text-neutral-500 dark:text-neutral-200">
-                        bugs@example.com
-                      </p>
-                      <p class="text-neutral-500 dark:text-neutral-200">
-                        +1 234-567-89
+                      <Link to="tel:+9779854041723">+977 9854041723</Link>
                       </p>
                     </div>
                   </div>

@@ -1,153 +1,148 @@
-import React from 'react'
-import meetingsHero from "../../Images/meetings/meetings1.jpg"
-import meetingsOne from "../../Images/meetings/meetings2.jpg"
-import meetingsTwo from "../../Images/meetings/meetings3.jpg"
-import eventsHero from "../../Images/events/events1.jpg"
-import eventsOne from "../../Images/events/events2.jpg"
-import eventsTwo from "../../Images/events/events3.jpg"
-import { TECarousel, TECarouselItem } from 'tw-elements-react'
-import ScrollingLogo from '../../MasterComponents/ScrollingLogo'
-import { useScrollToTop } from '../../MasterComponents/useScrollToTop'
-
+import React from "react";
+import lb1 from "../../Images/loungeBar/1.jpg";
+import lb2 from "../../Images/loungeBar/2.jpg";
+import lb3 from "../../Images/loungeBar/3.jpg";
+import lb4 from "../../Images/loungeBar/4.jpg";
+import lb5 from "../../Images/loungeBar/5.jpg";
+import lb6 from "../../Images/loungeBar/6.jpg";
+import lb7 from "../../Images/loungeBar/7.jpg";
+import lb8 from "../../Images/loungeBar/8.jpg";
+import lb9 from "../../Images/loungeBar/9.jpg";
+import { TECarousel, TECarouselItem } from "tw-elements-react";
+import ScrollingLogo from "../../MasterComponents/ScrollingLogo";
+import { useScrollToTop } from "../../MasterComponents/useScrollToTop";
 
 const LoungeBar = () => {
-
   useScrollToTop();
 
   return (
     <div className="sm:my-24 sm:mt-0">
-      <ScrollingLogo/>
+      <ScrollingLogo />
       <section className="mb-32">
-       
-        <TECarousel showControls={false} showIndicators ride="carousel" className='flex items-center justify-center text-center'>
-        <div className="absolute  text-2xl sm:text-6xl lobster z-20 text-white">Meetings</div>
-        <div className="absolute  text-xs sm:text-xl geologica z-20 text-white font-bold translate-y-9 sm:translate-y-20">
-          A place where you can engineer great plans and make great decisions
+        <div
+          class="embed-responsive embed-responsive-21by9 relative w-full overflow-hidden"
+          style={{ paddingTop: "42.857143%" }}
+        >
+          <iframe
+            className="embed-responsive-item absolute bottom-0 left-0 right-0 top-0 h-full w-full"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/eiMbFjnb67M?si=kYuLb_c6jYjXdS7N"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
-            <div className="relative w-full overflow-hidden after:clear-both after:block after:content-[''] opacity-95 ">
-              <TECarouselItem
-                itemID={1}
-                className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-              >
-                <img
-                  src={meetingsHero}
-                  className="block w-full"
-                  alt="..."
-                />
-              </TECarouselItem>
-              <TECarouselItem
-                itemID={2}
-                className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-              >
-                <img
-                  src={meetingsOne}
-                  className="block w-full"
-                  alt="..."
-                />
-              </TECarouselItem>
-              <TECarouselItem
-                itemID={3}
-                className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-              >
-                <img
-                  src={meetingsTwo}
-                  className="block w-full"
-                  alt="..."
-                />
-              </TECarouselItem>
-            </div>
-          </TECarousel>
 
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Lounge, Dining Area and Bar
+          </h1>
 
-      <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto">
-
-    
-        <h1 className="mb-6 mt-10 text-3xl font-bold lobster text-center">
-          A place where you can engineer great plans and make great decisions
-        </h1>
-    
-        <p className='geologica'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
-          harum tempore cupiditate asperiores provident, itaque, quo ex iusto
-          rerum voluptatum delectus corporis quisquam maxime a ipsam nisi
-          sapiente qui optio! Dignissimos harum quod culpa officiis suscipit
-          soluta labore! Expedita quas, nesciunt similique autem, sunt,
-          doloribus pariatur maxime qui sint id enim. Placeat, maxime labore.
-          Dolores ex provident ipsa impedit, omnis magni earum. Sed fuga ex
-          ducimus consequatur corporis, architecto nesciunt vitae ipsum
-          consequuntur perspiciatis nulla esse voluptatem quos dolorum delectus
-          similique eum vero in est velit quasi pariatur blanditiis incidunt
-          quam.
-        </p>
+          <p className="geologica text-sm sm:text-base">
+            Nestled in the quietest, safest, and most beautiful environment in
+            downtown Sindhuli Bazaar, you may not find anything tastier,
+            cleaner, and faster service than in the restaurant of Ganapati. When
+            you come for your meal, you will be satisfied. You can enjoy the
+            flavors in our spacious restaurant with a bar that offers local,
+            Indian, Chinese, Continental, Mexican, and Thai dishes.
+          </p>
         </div>
       </section>
 
       <section className="mb-32">
-       
-       <TECarousel showControls={false} showIndicators ride="carousel" className='flex items-center justify-center text-center'>
-       <div className="absolute  text-2xl sm:text-6xl lobster z-20 text-white">Events</div>
-       <div className="absolute  text-xs sm:text-xl geologica z-20 text-white font-bold translate-y-9 sm:translate-y-20">
-       Celebrate your milestones in the best possible way with Us
-       </div>
-           <div className="relative w-full overflow-hidden after:clear-both after:block after:content-[''] opacity-95 ">
-             <TECarouselItem
-               itemID={1}
-               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-             >
-               <img
-                 src={eventsHero}
-                 className="block w-full"
-                 alt="..."
-               />
-             </TECarouselItem>
-             <TECarouselItem
-               itemID={2}
-               className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-             >
-               <img
-                 src={eventsOne}
-                 className="block w-full"
-                 alt="..."
-               />
-             </TECarouselItem>
-             <TECarouselItem
-               itemID={3}
-               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-             >
-               <img
-                 src={eventsTwo}
-                 className="block w-full"
-                 alt="..."
-               />
-             </TECarouselItem>
-           </div>
-         </TECarousel>
+        <TECarousel
+          showControls={false}
+          showIndicators
+          ride="carousel"
+          className="flex items-center justify-center text-center"
+        >
+          <div className="absolute  text-2xl sm:text-6xl lobster z-20 text-white">
+            Meetings
+          </div>
+          <div className="absolute  text-xs sm:text-xl geologica z-20 text-white font-bold translate-y-9 sm:translate-y-20">
+            A place where you can engineer great plans and make great decisions
+          </div>
+          <div className="relative w-full overflow-hidden after:clear-both after:block after:content-[''] opacity-95 ">
+            <TECarouselItem
+              itemID={1}
+              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            >
+              <img src={lb1} className="block w-full" alt="..." />
+            </TECarouselItem>
+            <TECarouselItem
+              itemID={2}
+              className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            >
+              <img src={lb2} className="block w-full" alt="..." />
+            </TECarouselItem>
+            <TECarouselItem
+              itemID={3}
+              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            >
+              <img src={lb3} className="block w-full" alt="..." />
+            </TECarouselItem>
+            <TECarouselItem
+              itemID={4}
+              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            >
+              <img src={lb4} className="block w-full" alt="..." />
+            </TECarouselItem>
+            <TECarouselItem
+              itemID={5}
+              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            >
+              <img src={lb5} className="block w-full" alt="..." />
+            </TECarouselItem>
+            <TECarouselItem
+              itemID={6}
+              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            >
+              <img src={lb6} className="block w-full" alt="..." />
+            </TECarouselItem>
+            <TECarouselItem
+              itemID={7}
+              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            >
+              <img src={lb7} className="block w-full" alt="..." />
+            </TECarouselItem>
+            <TECarouselItem
+              itemID={8}
+              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            >
+              <img src={lb8} className="block w-full" alt="..." />
+            </TECarouselItem>
+            <TECarouselItem
+              itemID={9}
+              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            >
+              <img src={lb9} className="block w-full" alt="..." />
+            </TECarouselItem>
+          </div>
+        </TECarousel>
 
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            A space as close are your own!
+          </h1>
 
-     <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto">
-
-   
-       <h1 className="mb-6 mt-10 text-3xl font-bold lobster text-center">
-        Celebrate your milestones in the best possible way with Us!
-       </h1>
-   
-       <p className='geologica'>
-         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
-         harum tempore cupiditate asperiores provident, itaque, quo ex iusto
-         rerum voluptatum delectus corporis quisquam maxime a ipsam nisi
-         sapiente qui optio! Dignissimos harum quod culpa officiis suscipit
-         soluta labore! Expedita quas, nesciunt similique autem, sunt,
-         doloribus pariatur maxime qui sint id enim. Placeat, maxime labore.
-         Dolores ex provident ipsa impedit, omnis magni earum. Sed fuga ex
-         ducimus consequatur corporis, architecto nesciunt vitae ipsum
-         consequuntur perspiciatis nulla esse voluptatem quos dolorum delectus
-         similique eum vero in est velit quasi pariatur blanditiis incidunt
-         quam.
-       </p>
-       </div>
-     </section>
+          <p className="geologica text-sm sm:text-base">
+            In the heart of downtown Sindhuli Bazaar, Ganapati's restaurant
+            stands as a haven of tranquility and natural beauty. Our culinary
+            offerings go beyond mere meals, presenting a harmonious fusion of
+            flavors crafted to delight the discerning palate. Immerse yourself
+            in an ambiance of cleanliness and swift, impeccable service. The
+            expansive restaurant and well-stocked bar invite you to savor an
+            array of dishes, from local specialties to Indian, Chinese,
+            Continental, Mexican, and Thai delights. Ganapati's guarantees not
+            just a meal but an unforgettable culinary journey. Join us in this
+            rich tapestry of flavors, where satisfaction is a certainty.
+          </p>
+        </div>
+      </section>
     </div>
-  )
-}
+  );
+};
 
-export default LoungeBar
+export default LoungeBar;

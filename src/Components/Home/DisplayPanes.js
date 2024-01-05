@@ -18,7 +18,7 @@ const DisplayPanes = () => {
   }
 
   return (
-    <div className='bg-gray-900 py-10 '>
+    <div className='bg-gray-900 py-10'>
     <div className="container my-24 mx-auto md:px-6">
       <section className="mb-32">
         <h2 className="mb-12 text-center text-3xl font-bold text-white">Available Rooms</h2>
@@ -38,11 +38,6 @@ const DisplayPanes = () => {
                 <div className="flex h-full items-end justify-start">
                   <div className="m-6 text-white">
                     <h5 className="mb-3 text-lg font-bold">Apartment</h5>
-                    <p>
-                      <small
-                        >Suitable for ... peoples</small
-                      >
-                    </p>
                   </div>
                 </div>
               </div>
@@ -67,9 +62,7 @@ const DisplayPanes = () => {
                     <h5 className="mb-3 text-lg font-bold">
                       Deluxe Room
                     </h5>
-                    <small
-                        >Suitable for ... peoples</small
-                      >
+
                   </div>
                 </div>
               </div>
@@ -92,11 +85,6 @@ const DisplayPanes = () => {
                 <div className="flex h-full items-end justify-start">
                   <div className="m-6 text-white">
                     <h5 className="mb-3 text-lg font-bold">Dormitory</h5>
-                    <p>
-                    <small
-                        >Suitable for ... peoples</small
-                      >
-                    </p>
                   </div>
                 </div>
               </div>
@@ -119,11 +107,6 @@ const DisplayPanes = () => {
                 <div className="flex h-full items-end justify-start">
                   <div className="m-6 text-white">
                     <h5 className="mb-3 text-lg font-bold">Double Bed</h5>
-                    <p>
-                    <small
-                        >Suitable for ... peoples</small
-                      >
-                    </p>
                   </div>
                 </div>
               </div>
@@ -148,11 +131,6 @@ const DisplayPanes = () => {
                     <h5 className="mb-3 text-lg font-bold">
                       Family Sized
                     </h5>
-                    <p>
-                    <small
-                        >Suitable for ... peoples</small
-                      >
-                    </p>
                   </div>
                 </div>
               </div>
@@ -175,11 +153,6 @@ const DisplayPanes = () => {
                 <div className="flex h-full items-end justify-start">
                   <div className="m-6 text-white">
                     <h5 className="mb-3 text-lg font-bold">Suite</h5>
-                    <p>
-                    <small
-                        >Suitable for ... peoples</small
-                      >
-                    </p>
                   </div>
                 </div>
               </div>
