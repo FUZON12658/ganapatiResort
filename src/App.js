@@ -16,6 +16,7 @@ import About from './Components/About/About';
 import { useScrollToTop } from './MasterComponents/useScrollToTop';
 import { useEffect } from 'react';
 import Contact from './Components/Contact/Contact';
+import Experiences from './Components/Experiences/Experiences';
 
 
 
@@ -34,6 +35,7 @@ function App() {
     <Route exact path="/weddings" element={<WeddingDisplay/>}></Route>
     <Route exact path="/loungeBar" element={<LoungeBar/>}></Route>
     <Route exact path='/contacts' element={<Contact/>}></Route>
+    <Route exact path='/experiences' element={<Experiences/>}></Route>
   </Routes>
   <Footer/>
   </Router>
