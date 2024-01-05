@@ -46,9 +46,9 @@ const FloatingMenu = () => {
   const expandCollapseButton = (
     <div className="hidden sm:flow-root cursor-pointer p-2" onClick={modifyShowFloatingMenu}>
       {showFloatingMenu ? (
-        <i className="fa-solid fa-chevron-right text-white"></i>
+        <i className="fa-solid fa-chevron-right text-white scale-75"></i>
       ) : (
-        <i className="fa-solid fa-chevron-left text-white"></i>
+        <i className="fa-solid fa-chevron-left text-white scale-75"></i>
       )}
     </div>
   );
@@ -232,7 +232,7 @@ const FloatingMenu = () => {
       </div>
 
       <div
-        className={`${topPosition} sm:fixed sm:top-1/2 sm:right-0 sm:transform sm:-translate-y-1/2 bg-gray-800 text-white sm:p-4 rounded-l-md shadow-md z-40 select-none border-orange-500 border-2 md:rounded-r-md flex items-center w-full sm:w-auto justify-center text-sm sm:text-base gap-4`}
+        className={`${topPosition} sm:fixed sm:top-1/2 sm:right-0 sm:transform sm:-translate-y-1/2 bg-gray-800 text-white sm:p-1 rounded-l-md shadow-md z-40 select-none border-orange-500 border-2 md:rounded-r-md flex items-center w-full sm:w-auto justify-center text-sm sm:text-base gap-4`}
         id="floatingNavBar"
       >
         {expandCollapseButton}
@@ -256,7 +256,7 @@ const FloatingMenu = () => {
           </div>
           <div
             className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3"
-            onClick={renderHamburgerMenuTrue}
+  
           >
             <Link to="tel:+9779805843762">Call Now</Link>
           </div>
