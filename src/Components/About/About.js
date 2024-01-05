@@ -55,11 +55,11 @@ const About = () => {
         ;
       </div>
       <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto">
-        <h1 className="mb-6 mt-10 text-3xl font-bold lobster text-center">
+        <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
           Have a luxurious experience
         </h1>
 
-        <p className="geologica">
+        <p className="geologica text-sm sm:text-base">
           Ganapati Hotel and Resort is newly established resort in Sindhuli
           district, in inner Terai region of Janakpur, Zone. This historical
           place is nearly 185 km far from the country’s capital Kathmandu
