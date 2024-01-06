@@ -41,12 +41,13 @@ const LoungeBar = () => {
           </h1>
 
           <p className="geologica text-sm sm:text-base">
-            Nestled in the quietest, safest, and most beautiful environment in
-            downtown Sindhuli Bazaar, you may not find anything tastier,
-            cleaner, and faster service than in the restaurant of Ganapati. When
-            you come for your meal, you will be satisfied. You can enjoy the
-            flavors in our spacious restaurant with a bar that offers local,
-            Indian, Chinese, Continental, Mexican, and Thai dishes.
+            Situated in the serene, secure, and picturesque downtown Sindhuli
+            Bazaar, Ganapati's restaurant promises an unmatched dining
+            experience with delectable, impeccably prepared dishes and swift
+            service. When you choose to dine with us, satisfaction is
+            guaranteed. Indulge in a delightful array of flavors in our spacious
+            restaurant, complete with a bar offering a diverse menu featuring
+            local, Indian, Chinese, Continental, Mexican, and Thai cuisines.
           </p>
         </div>
       </section>
@@ -128,16 +129,17 @@ const LoungeBar = () => {
           </h1>
 
           <p className="geologica text-sm sm:text-base">
-            In the heart of downtown Sindhuli Bazaar, Ganapati's restaurant
-            stands as a haven of tranquility and natural beauty. Our culinary
-            offerings go beyond mere meals, presenting a harmonious fusion of
-            flavors crafted to delight the discerning palate. Immerse yourself
-            in an ambiance of cleanliness and swift, impeccable service. The
-            expansive restaurant and well-stocked bar invite you to savor an
-            array of dishes, from local specialties to Indian, Chinese,
-            Continental, Mexican, and Thai delights. Ganapati's guarantees not
-            just a meal but an unforgettable culinary journey. Join us in this
-            rich tapestry of flavors, where satisfaction is a certainty.
+            Nestled in the heart of downtown Sindhuli Bazaar, Ganapati's
+            restaurant stands as a haven of tranquility and natural beauty. Our
+            culinary offerings transcend mere meals, presenting a harmonious
+            fusion of flavors crafted to delight the discerning palate. Immerse
+            yourself in an atmosphere of cleanliness and enjoy swift, impeccable
+            service. The expansive restaurant and well-stocked bar invite you to
+            savor a diverse array of dishes, ranging from local specialties to
+            Indian, Chinese, Continental, Mexican, and Thai delights. Ganapati's
+            guarantees not just a meal but an unforgettable culinary journey.
+            Join us in this rich tapestry of flavors, where satisfaction is a
+            certainty.
           </p>
         </div>
       </section>

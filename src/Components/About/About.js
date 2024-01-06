@@ -2,7 +2,7 @@ import React from "react";
 import ScrollingLogo from "../../MasterComponents/ScrollingLogo";
 import nareshImage from "../../Images/aboutUs/naresh.jpg";
 import krishnaImage from "../../Images/aboutUs/krishna.jpg";
-import santoshImage from "../../Images/aboutUs/santosh.jpg"
+import santoshImage from "../../Images/aboutUs/santosh.jpg";
 import { useScrollToTop } from "../../MasterComponents/useScrollToTop";
 
 const About = () => {
@@ -15,7 +15,7 @@ const About = () => {
       descriptionOne:
         "Dear Valued Stakeholders, Welcome to GANAPATI HOTEL AND RESORT (GHAR) In today&#39;s competitive business environment, it is extremely important for us to maintain a leading position in Nepal from the beautiful landscape of SINDHULI, creating a difference in business setting to attain sustainable growth and profit, when it comes to planning, development and the management of hospitality facilities, no one does it better than GANAPATI in SINDHULI.",
       descriptionTwo:
-        " We pride our self on our different stakeholders, GM, partners and guest. Our expertise lies on our dedicated team of employees. We cordially invite you to join us, pay your visit.",
+        " We pride ourself on our different stakeholders, GM, partners and guest. Our expertise lies on our dedicated team of employees. We cordially invite you to join us, pay your visit.",
     },
     {
       img: santoshImage,
@@ -60,16 +60,17 @@ const About = () => {
         </h1>
 
         <p className="geologica text-sm sm:text-base">
-          Ganapati Hotel and Resort is newly established resort in Sindhuli
-          district, in inner Terai region of Janakpur, Zone. This historical
-          place is nearly 185 km far from the country’s capital Kathmandu
-          traveling from recently constructed BP Highway. The resort aims to
-          provide the best hospitality service in Nepal from the historical
-          place of Sindhuli. We offer luxurious, superb leisure facilities and
-          top class dining options to make our facility perfect venue for
-          holiday package, quick breaks, conferences, wedding and all kind of
-          celebrations. We warmly invite you to join us and experience the
-          differences!
+          Ganapati Hotel and Resort, a newly established retreat in the Sindhuli
+          district within the inner Terai region of Janakpur Zone, is situated
+          approximately 185 km from the capital city, Kathmandu, accessible via
+          the recently constructed BP Highway. Our resort is dedicated to
+          delivering unparalleled hospitality services at this historical
+          location in Sindhuli. We pride ourselves on offering luxurious
+          accommodations, outstanding leisure facilities, and top-notch dining
+          options, making our establishment the ideal venue for holiday
+          packages, quick getaways, conferences, weddings, and various
+          celebrations. We extend a warm invitation for you to join us and
+          indulge in an exceptional experience!
         </p>
       </div>
       {people.map((person) => (
@@ -90,12 +91,8 @@ const About = () => {
                 <div class="flex h-full items-center rounded-lg bg-orange-500 p-6 text-center text-white lg:pl-12 lg:text-left">
                   <div class="lg:pl-12">
                     <h2 class="mb-8 text-3xl font-bold">{person.name}</h2>
-                    <p class="mb-8 pb-2 lg:pb-0">
-                     {person.descriptionOne}
-                    </p>
-                    <p>
-                    {person.descriptionTwo}
-                    </p>
+                    <p class="mb-8 pb-2 lg:pb-0">{person.descriptionOne}</p>
+                    <p>{person.descriptionTwo}</p>
                   </div>
                 </div>
               </div>

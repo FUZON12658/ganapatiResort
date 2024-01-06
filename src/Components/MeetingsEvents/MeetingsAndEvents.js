@@ -56,18 +56,18 @@ const MeetingsAndEvents = () => {
           </h1>
 
           <p className="geologica text-sm sm:text-base">
-            A spacious meeting halls with best equipments and furnishing
-            desgins. Discover unparalleled meeting experiences at Ganapati
-            Hotel and Resort. Our spacious meeting halls boast cutting-edge
-            audio-visual equipment and chic furnishings, providing a
-            sophisticated backdrop for your events. Customize layouts for board
-            meetings, seminars, or conferences, supported by high-speed
-            internet. Our professional team ensures seamless execution, from
-            technical support to catering services. Enjoy gourmet dishes and
-            refreshments, surrounded by natural lighting and ventilation. The
-            elegant décor adds a touch of class to every gathering. Elevate your
-            business events with Ganapati Hotel and Resort—where professionalism
-            meets comfort in style.
+            Experience unparalleled meeting excellence at Ganapati Hotel and
+            Resort, featuring a spacious hall equipped with the finest amenities
+            and stylish furnishings. Our expansive meeting halls showcase
+            state-of-the-art audio-visual equipment, creating a sophisticated
+            setting for your events. Tailor the layout for board meetings,
+            seminars, or conferences, complemented by high-speed internet
+            access. Our dedicated team ensures flawless execution, providing
+            technical support and catering services. Indulge in gourmet dishes
+            and refreshments amidst natural lighting and ventilation. The
+            elegant decor adds a touch of sophistication to every gathering.
+            Elevate your business events with Ganapati Hotel and Resort—where
+            professionalism seamlessly blends with comfort and style.
           </p>
         </div>
       </section>
