@@ -47,31 +47,31 @@ const FoodMenu = () => {
             itemID={1}
             className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           >
-            <img src={fi1} className="block w-full h-[100vh]" alt="..." />
+            <img src={fi1} className="block w-full md:h-[100vh]" alt="..." />
           </TECarouselItem>
           <TECarouselItem
             itemID={2}
             className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           >
-            <img src={fi2} className="block w-full h-[100vh]" alt="..." />
+            <img src={fi2} className="block w-full md:h-[100vh]" alt="..." />
           </TECarouselItem>
           <TECarouselItem
             itemID={3}
             className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           >
-            <img src={fi3} className="block w-full h-[100vh]" alt="..." />
+            <img src={fi3} className="block w-full md:h-[100vh]" alt="..." />
           </TECarouselItem>
           <TECarouselItem
             itemID={4}
             className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           >
-            <img src={fi4} className="block w-full h-[100vh]" alt="..." />
+            <img src={fi4} className="block w-full md:h-[100vh]" alt="..." />
           </TECarouselItem>
           <TECarouselItem
             itemID={5}
             className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           >
-            <img src={fi5} className="block w-full h-[100vh]" alt="..." />
+            <img src={fi5} className="block w-full md:h-[100vh]" alt="..." />
           </TECarouselItem>
         </div>
       </TECarousel>
