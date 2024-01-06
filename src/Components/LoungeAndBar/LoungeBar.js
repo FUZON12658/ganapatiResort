@@ -20,7 +20,7 @@ const LoungeBar = () => {
       <ScrollingLogo />
       <section className="mb-32">
         <div
-          class="embed-responsive embed-responsive-21by9 relative w-full overflow-hidden"
+          className="embed-responsive embed-responsive-21by9 relative w-full overflow-hidden"
           style={{ paddingTop: "42.857143%" }}
         >
           <iframe

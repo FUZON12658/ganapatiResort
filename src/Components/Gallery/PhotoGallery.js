@@ -198,75 +198,75 @@ const PhotoGallery = () => {
           </h1>
         </div>
 
-        <div class="container mx-auto flex flex-col">
-          <div class="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
-            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div class="overflow-hidden">
-                <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
-                  <thead class="border-b font-medium dark:border-neutral-500">
+        <div className="container mx-auto flex flex-col">
+          <div className="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
+            <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+              <div className="overflow-hidden">
+                <table className="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                  <thead className="border-b font-medium dark:border-neutral-500">
                     <tr>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         S.N.
                       </th>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         Topic
                       </th>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         Offers
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         1
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Room Category
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         Apartment
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         2
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Capacity
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         2 pax
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         3
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Bed Type
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         One King Size
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         4
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Services
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         Cupboard & Study Table, HD LED Smart TV, Telephone, High
                         Speed Internet, Kitchens Attached Bathrooms, for small
                         family & couples, etc
@@ -402,75 +402,75 @@ const PhotoGallery = () => {
           </h1>
         </div>
 
-        <div class="container mx-auto flex flex-col">
-          <div class="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
-            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div class="overflow-hidden">
-                <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
-                  <thead class="border-b font-medium dark:border-neutral-500">
+        <div className="container mx-auto flex flex-col">
+          <div className="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
+            <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+              <div className="overflow-hidden">
+                <table className="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                  <thead className="border-b font-medium dark:border-neutral-500">
                     <tr>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         S.N.
                       </th>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         Topic
                       </th>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         Offers
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         1
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Room Category
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         Deluxe Room
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         2
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Capacity
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         2 pax
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         3
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Bed Type
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         One King Size
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         4
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Services
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         Closet with hangers, HD LED Smart TV, Telephone, High
                         Speed Internet, Mini-bar, Attached Bathrooms, etc
                       </td>
@@ -630,75 +630,75 @@ const PhotoGallery = () => {
           </h1>
         </div>
 
-        <div class="container mx-auto flex flex-col">
-          <div class="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
-            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div class="overflow-hidden">
-                <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
-                  <thead class="border-b font-medium dark:border-neutral-500">
+        <div className="container mx-auto flex flex-col">
+          <div className="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
+            <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+              <div className="overflow-hidden">
+                <table className="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                  <thead className="border-b font-medium dark:border-neutral-500">
                     <tr>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         S.N.
                       </th>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         Topic
                       </th>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         Offers
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         1
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Room Category
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         Double Bed
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         2
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Capacity
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         2 pax
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         3
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Bed Type
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         Two Double Beds
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         4
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Services
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         Closet with hangers, HD LED Smart TV, Telephone, High
                         Speed Internet, Mini-bar, Attached Bathrooms, etc
                       </td>
@@ -945,75 +945,75 @@ const PhotoGallery = () => {
           </h1>
         </div>
 
-        <div class="container mx-auto flex flex-col">
-          <div class="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
-            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div class="overflow-hidden">
-                <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
-                  <thead class="border-b font-medium dark:border-neutral-500">
+        <div className="container mx-auto flex flex-col">
+          <div className="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
+            <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+              <div className="overflow-hidden">
+                <table className="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                  <thead className="border-b font-medium dark:border-neutral-500">
                     <tr>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         S.N.
                       </th>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         Topic
                       </th>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         Offers
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         1
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Room Category
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         Dormitory
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         2
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Capacity
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         18-20 pax
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         3
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Bed Type
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         Nine King Size Bed
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         4
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Services
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         HD LED Smart TV, Telephone, High Speed Internet,
                         Attached Bathrooms, etc.
                       </td>
@@ -1150,75 +1150,75 @@ const PhotoGallery = () => {
           </h1>
         </div>
 
-        <div class="container mx-auto flex flex-col">
-          <div class="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
-            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div class="overflow-hidden">
-                <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
-                  <thead class="border-b font-medium dark:border-neutral-500">
+        <div className="container mx-auto flex flex-col">
+          <div className="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
+            <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+              <div className="overflow-hidden">
+                <table className="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                  <thead className="border-b font-medium dark:border-neutral-500">
                     <tr>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         S.N.
                       </th>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         Topic
                       </th>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         Offers
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         1
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Room Category
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         Family
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         2
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Capacity
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         3 pax
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         3
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Bed Type
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         One Queen Size Bed & One Single Bed
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         4
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Services
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         Closet with hangers, HD LED Smart TV, Telephone, High
                         Speed Internet, Mini-bar, Attached Bathrooms, etc
                       </td>
@@ -1342,75 +1342,75 @@ const PhotoGallery = () => {
           </h1>
         </div>
 
-        <div class="container mx-auto flex flex-col">
-          <div class="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
-            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div class="overflow-hidden">
-                <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
-                  <thead class="border-b font-medium dark:border-neutral-500">
+        <div className="container mx-auto flex flex-col">
+          <div className="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
+            <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+              <div className="overflow-hidden">
+                <table className="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                  <thead className="border-b font-medium dark:border-neutral-500">
                     <tr>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         S.N.
                       </th>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         Topic
                       </th>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         Offers
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         1
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Room Category
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         Single
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         2
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Capacity
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         2 pax
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         3
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Bed Type
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         One Queen Size Bed
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         4
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Services
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         Closet with Hangers, HD LED Smart TV, Telephone, High
                         Speed Internet, Attached Bathrooms, etc
                       </td>
@@ -1508,75 +1508,75 @@ const PhotoGallery = () => {
           </h1>
         </div>
 
-        <div class="container mx-auto flex flex-col">
-          <div class="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
-            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div class="overflow-hidden">
-                <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
-                  <thead class="border-b font-medium dark:border-neutral-500">
+        <div className="container mx-auto flex flex-col">
+          <div className="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
+            <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+              <div className="overflow-hidden">
+                <table className="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                  <thead className="border-b font-medium dark:border-neutral-500">
                     <tr>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         S.N.
                       </th>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         Topic
                       </th>
                       <th
                         scope="col"
-                        class="border-r px-6 py-4 dark:border-neutral-500"
+                        className="border-r px-6 py-4 dark:border-neutral-500"
                       >
                         Offers
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         1
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Room Category
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         Suite
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         2
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Capacity
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         2 pax
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         3
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Bed Type
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         One King Size
                       </td>
                     </tr>
-                    <tr class="border-b dark:border-neutral-500">
-                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                    <tr className="border-b dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         4
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
                         Services
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                      <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
                         Closet with hangers, Cupboard with study table, HD LED
                         Smart TV, Telephone, High Speed Internet, kitchens,
                         Mini-bar, Attached Bathrooms, etc.

@@ -53,7 +53,7 @@ export default function Footer() {
           {/* <!-- TW Elements section --> */}
           <div className="">
           <img src={heroImage}
-                class="rounded-lg shadow-lg dark:shadow-black/20 z-[10] scale-50 bg-white mb-4 flex justify-center font-semibold uppercase md:justify-start" alt="image" />
+                className="rounded-lg shadow-lg dark:shadow-black/20 z-[10] scale-50 bg-white mb-4 flex justify-center font-semibold uppercase md:justify-start" alt="image" />
           </div>
           {/* <!-- Products section --> */}
           <div className="">

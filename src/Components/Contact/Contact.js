@@ -8,34 +8,34 @@ const Contact = () => {
   return (
     <>
     <ScrollingLogo/>
-    <div class="container my-24 mx-auto md:px-6 sm:mt-60 ">
-      <section class="mb-32">
-        <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-          <div class="flex flex-wrap items-center">
-            <div class="block w-full shrink-0 grow-0 basis-auto lg:flex lg:w-6/12 xl:w-4/12">
-              <div class="h-[500px] w-full">
+    <div className="container my-24 mx-auto md:px-6 sm:mt-60 ">
+      <section className="mb-32">
+        <div className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+          <div className="flex flex-wrap items-center">
+            <div className="block w-full shrink-0 grow-0 basis-auto lg:flex lg:w-6/12 xl:w-4/12">
+              <div className="h-[500px] w-full">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14190.399391599589!2d85.9130859!3d27.2317104!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb8dcea09a505b%3A0x7b5baaaa14994cc1!2sGanapati%20Hotel%20%26%20Resort!5e0!3m2!1sen!2snp!4v1704472043433!5m2!1sen!2snp"
-                  class="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg"
+                  className="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg"
                   frameborder="0"
                   allowfullscreen
                 ></iframe>
 
               </div>
             </div>
-            <div class="w-full shrink-0 grow-0 basis-auto lg:w-6/12 xl:w-8/12">
-              <div class="flex flex-wrap px-3 pt-12 pb-12 md:pb-0 lg:pt-0">
-                <div class="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:w-6/12 xl:px-12">
-                  <div class="flex items-start">
-                    <div class="shrink-0">
-                      <div class="inline-block rounded-md bg-primary-100 p-4 text-primary">
+            <div className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 xl:w-8/12">
+              <div className="flex flex-wrap px-3 pt-12 pb-12 md:pb-0 lg:pt-0">
+                <div className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:w-6/12 xl:px-12">
+                  <div className="flex items-start">
+                    <div className="shrink-0">
+                      <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke-width="2"
                           stroke="currentColor"
-                          class="h-6 w-6"
+                          className="h-6 w-6"
                         >
                           <path
                             stroke-linecap="round"
@@ -45,30 +45,34 @@ const Contact = () => {
                         </svg>
                       </div>
                     </div>
-                    <div class="ml-6 grow">
-                      <p class="mb-2 font-bold dark:text-white">
+                    <div className="ml-6 grow">
+                      <p className="mb-2 font-bold dark:text-white">
                         General Information
                       </p>
-                      <p class="text-neutral-500 dark:text-neutral-200">
-                        info@ganapatihotelandresort.com
+                      <p className="text-neutral-500 dark:text-neutral-200">
+                        contact@ganapatihotelandresort.com
                       </p>
-                      <p class="text-neutral-500 dark:text-neutral-200">
-                      <Link to="tel:+9779802020346">+977 9802020346</Link>
+                      <p className="text-neutral-500 dark:text-neutral-200">
+                      <Link to="tel:+9779802020346">+977 9802020346, </Link>
+                      <Link to="tel:+977047-520346">+977 047-520346, </Link>
+                      <Link to="tel:+977047-521056">+977 047-521056, </Link>
+                      <Link to="tel:+9779854041723">+977 9854041723</Link>
+                      
                       </p>
                     </div>
                   </div>
                 </div>
-                <div class="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:w-6/12 xl:px-12">
-                  <div class="flex items-start">
-                    <div class="shrink-0">
-                      <div class="inline-block rounded-md bg-primary-100 p-4 text-primary">
+                <div className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:w-6/12 xl:px-12">
+                  <div className="flex items-start">
+                    <div className="shrink-0">
+                      <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke-width="2"
                           stroke="currentColor"
-                          class="h-6 w-6"
+                          className="h-6 w-6"
                         >
                           <path
                             stroke-linecap="round"
@@ -78,14 +82,14 @@ const Contact = () => {
                         </svg>
                       </div>
                     </div>
-                    <div class="ml-6 grow">
-                      <p class="mb-2 font-bold dark:text-white">
+                    <div className="ml-6 grow">
+                      <p className="mb-2 font-bold dark:text-white">
                         For Booking
                       </p>
-                      <p class="text-neutral-500 dark:text-neutral-200">
+                      <p className="text-neutral-500 dark:text-neutral-200">
                         contact@ganapatihotelandresort.com
                       </p>
-                      <p class="text-neutral-500 dark:text-neutral-200">
+                      <p className="text-neutral-500 dark:text-neutral-200">
                       <Link to="tel:+9779854041723">+977 9854041723</Link>
                       </p>
                     </div>
