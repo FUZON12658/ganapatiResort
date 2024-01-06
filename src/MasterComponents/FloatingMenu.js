@@ -237,7 +237,7 @@ const FloatingMenu = () => {
       >
         {expandCollapseButton}
         {showFloatingMenu &&
-        <div className="hidden sm:flex sm:flex-col">
+        <div className="hidden sm:flex sm:flex-col ">
           <div
             className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3"
             onClick={renderHamburgerMenuTrue}
@@ -260,10 +260,16 @@ const FloatingMenu = () => {
           >
             <Link to="tel:+9779805843762">Call Now</Link>
           </div>
+          <div
+            className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3"
+  
+          >
+            <Link to="/menu">Food Menu</Link>
+          </div>
           {/* Add more menu items as needed */}
         </div>}
         
-        <div className="flex sm:hidden">
+        <div className="flex sm:hidden ">
           <div
             className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3"
           >
@@ -275,15 +281,21 @@ const FloatingMenu = () => {
             </div>
           </div>
           <div
-            className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3"
+            className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3 text-xs md:text-lg"
           >
             <Link to="mailto:contact@ganapatihotelandresort.com">Book Now</Link>
           </div>
           <div
-            className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3"
+            className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3 text-xs md:text-lg"
           >
             <Link to="tel:+9779805843762">Call Now</Link>
           </div>
+          <Link
+            className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3 text-xs md:text-lg"
+            to='/menu'
+          >
+            Food Menu
+          </Link>
         </div>  
 
       </div>

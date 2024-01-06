@@ -28,7 +28,7 @@ const DisplayPanes = () => {
             className="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
             data-te-ripple-init
             data-te-ripple-color="light"
-            onClick={()=>navigateToFrame("apartmentRoom")}>
+            onClick={()=>navigateToFrame("solaBhanjyang")}>
             <img
               src={apartmentHero}
               className="w-full align-middle transition duration-300 ease-linear" />
@@ -50,7 +50,7 @@ const DisplayPanes = () => {
             className="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
             data-te-ripple-init
             data-te-ripple-color="light"
-            onClick={()=>navigateToFrame("deluxeRoom")}>
+            onClick={()=>navigateToFrame("dhungrebash")}>
             <img
               src={deluxeHero}
               className="w-full align-middle transition duration-300 ease-linear" />
@@ -75,7 +75,7 @@ const DisplayPanes = () => {
             className="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
             data-te-ripple-init
             data-te-ripple-color="light"
-            onClick={()=>navigateToFrame("dormitoryRoom")}>
+            onClick={()=>navigateToFrame("khaniyaKharka")}>
             <img
               src={dormitoryHero}
               className="w-full align-middle transition duration-300 ease-linear" />
@@ -97,7 +97,7 @@ const DisplayPanes = () => {
             className="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
             data-te-ripple-init
             data-te-ripple-color="light"
-            onClick={()=>navigateToFrame("doubleBedRoom")}>
+            onClick={()=>navigateToFrame("mallaGaun")}>
             <img
               src={doubleBedHero}
               className="w-full align-middle transition duration-300 ease-linear" />
@@ -119,7 +119,7 @@ const DisplayPanes = () => {
             className="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
             data-te-ripple-init
             data-te-ripple-color="light"
-            onClick={()=>navigateToFrame("familyRoom")}>
+            onClick={()=>navigateToFrame("ratamata")}>
             <img
               src={familyHero}
               className="w-full align-middle transition duration-300 ease-linear" />
@@ -143,7 +143,7 @@ const DisplayPanes = () => {
             className="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
             data-te-ripple-init
             data-te-ripple-color="light"
-            onClick={()=>navigateToFrame("suiteRoom")}>
+            onClick={()=>navigateToFrame("dhungreBhanjyang")}>
             <img
               src={suiteHero}
               className="w-full align-middle transition duration-300 ease-linear" />

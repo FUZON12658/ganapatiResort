@@ -52,8 +52,10 @@ import suiteRoomTwo from "../../Images/suiteRoom/suiteRoom2.jpg";
 import suiteRoomThree from "../../Images/suiteRoom/suiteRoom3.jpg";
 import { useLocation } from "react-router-dom";
 import ScrollingLogo from "../../MasterComponents/ScrollingLogo";
+import { useScrollToTop } from "../../MasterComponents/useScrollToTop";
 
 const PhotoGallery = () => {
+  useScrollToTop();
   const location = useLocation();
   const roomType = new URLSearchParams(location.search).get("roomType");
 

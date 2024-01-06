@@ -88,7 +88,7 @@ const ContactUs = () => {
           <ul className="mt-12 flex flex-wrap gap-x-12 gap-y-6 items-center lg:gap-x-24 justify-center">
             {contactMethods.map((item, idx) => (
               <li key={idx} className="text-center">
-                <h4 className="text-gray-800 text-lg font-medium">
+                <h4 className="text-gray-800 text-sm sm:text-lg font-medium">
                   {item.title}
                 </h4>
                 <div className="mt-3 flex items-center gap-x-3">
@@ -97,7 +97,7 @@ const ContactUs = () => {
                       {item.icon}
                     </a>
                   </div>
-                  <a href={item.href} className="hover:text-orange-500" target={item.target}>
+                  <a href={item.href} className="hover:text-orange-500 text-xs sm:text-lg" target={item.target}>
                       {item.contact}
                     </a>
                 </div>
