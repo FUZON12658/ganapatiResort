@@ -32,7 +32,7 @@ const RoomsDisplay = () => {
         <div class="grid gap-6 lg:grid-cols-3 xl:gap-x-12" >
           <div class="mb-6 lg:mb-0" onClick={()=>navigateToFrame("solaBhanjyang")}>
             <div
-              class="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+              class="relative block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
               <div class="flex">
                 <div
                   class="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
@@ -59,7 +59,7 @@ const RoomsDisplay = () => {
 
           <div class="mb-6 lg:mb-0"  onClick={()=>navigateToFrame("dhungreBhanjyang")}>
             <div
-              class="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+              class="relative block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
               <div class="flex">
                 <div
                   class="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
@@ -86,7 +86,7 @@ const RoomsDisplay = () => {
     
           <div class="mb-0" onClick={()=>navigateToFrame("khaniyaKharka")}>
             <div
-              class="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+              class="relative block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
               <div class="flex">
                 <div
                   class="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
@@ -117,7 +117,7 @@ const RoomsDisplay = () => {
         <div class="grid gap-6 lg:grid-cols-3 xl:gap-x-12">
           <div class="mb-6 lg:mb-0" onClick={()=>navigateToFrame("dhungrebash")}>
             <div
-              class="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+              class="relative block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
               <div class="flex">
                 <div
                   class="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
@@ -147,7 +147,7 @@ const RoomsDisplay = () => {
 
           <div class="mb-6 lg:mb-0" onClick={()=>navigateToFrame("mallaGaun")}>
             <div
-              class="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+              class="relative block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
               <div class="flex">
                 <div
                   class="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
@@ -174,7 +174,7 @@ const RoomsDisplay = () => {
     
           <div class="mb-6 lg:mb-0" onClick={()=>navigateToFrame("ratamata")}>
             <div
-              class="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+              class="relative block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
               <div class="flex">
                 <div
                   class="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
@@ -205,7 +205,7 @@ const RoomsDisplay = () => {
       <div class="grid gap-6 lg:grid-cols-3 xl:gap-x-12">
       <div class="mb-0" onClick={()=>navigateToFrame("pipalBhanjyang")}>
             <div
-              class="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+              class="relative block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
               <div class="flex">
                 <div
                   class="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
