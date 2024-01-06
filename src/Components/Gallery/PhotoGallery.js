@@ -57,11 +57,17 @@ const PhotoGallery = () => {
   const location = useLocation();
   const roomType = new URLSearchParams(location.search).get("roomType");
 
-  if (roomType === "apartmentRoom") {
+  if (roomType === "solaBhanjyang") {
     return (
       <>
         <ScrollingLogo />
-        <div className="sm:grid grid-cols-2 md:grid-cols-3 gap-4 items-center sm:mt-56 hidden">
+
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto sm:mt-56">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Sola Bhanjyang
+          </h1>
+        </div>
+        <div className="sm:grid grid-cols-2 md:grid-cols-3 gap-4 items-center hidden">
           <div className="grid gap-4">
             <div>
               <img
@@ -168,8 +174,32 @@ const PhotoGallery = () => {
           </TECarousel>
         </div>
 
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Nrs. 7,500/- per Night
+          </h1>
+
+          <p className="geologica text-sm sm:text-base">
+            This block is named after the beautiful village that lies in
+            Sindhuli near the Selfie Hill in BP Highway. It is famous for the
+            sweeping panoramic views along with foggy valley below. This block
+            consists of apartment type room with the facility of Kitchen
+            suitable for family and couple. It consist of 1 King sized bed
+            single. This block has AC, high-quality sofas,
+            refrigerator, flat screens LED TV, speedy internet, hot and cold
+            water equipped with all the required amenities kits and kitchen
+            utensils.
+          </p>
+        </div>
+
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto ">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Room details
+          </h1>
+        </div>
+
         <div class="container mx-auto flex flex-col">
-          <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div class="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
             <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
               <div class="overflow-hidden">
                 <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
@@ -179,22 +209,19 @@ const PhotoGallery = () => {
                         scope="col"
                         class="border-r px-6 py-4 dark:border-neutral-500"
                       >
-                        #
+                        S.N.
                       </th>
                       <th
                         scope="col"
                         class="border-r px-6 py-4 dark:border-neutral-500"
                       >
-                        First
+                        Topic
                       </th>
                       <th
                         scope="col"
                         class="border-r px-6 py-4 dark:border-neutral-500"
                       >
-                        Last
-                      </th>
-                      <th scope="col" class="px-6 py-4">
-                        Handle
+                        Offers
                       </th>
                     </tr>
                   </thead>
@@ -204,36 +231,46 @@ const PhotoGallery = () => {
                         1
                       </td>
                       <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                        Mark
+                        Room Category
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                        Otto
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        Apartment
                       </td>
-                      <td class="whitespace-nowrap px-6 py-4">@mdo</td>
                     </tr>
                     <tr class="border-b dark:border-neutral-500">
                       <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         2
                       </td>
                       <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                        Jacob
+                        Capacity
                       </td>
-                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
-                        Thornton
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        2 pax
                       </td>
-                      <td class="whitespace-nowrap px-6 py-4">@fat</td>
                     </tr>
                     <tr class="border-b dark:border-neutral-500">
                       <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         3
                       </td>
-                      <td
-                        colspan="2"
-                        class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500"
-                      >
-                        Larry the Bird
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Bed Type
                       </td>
-                      <td class="whitespace-nowrap px-6 py-4">@twitter</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        One King Size
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                        4
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Services
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        Cupboard & Study Table, HD LED Smart TV, Telephone, High
+                        Speed Internet, Kitchens Attached Bathrooms, for small
+                        family & couples, etc
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -243,11 +280,16 @@ const PhotoGallery = () => {
         </div>
       </>
     );
-  } else if (roomType === "deluxeRoom") {
+  } else if (roomType === "dhungrebash") {
     return (
       <>
         <ScrollingLogo />
-        <div className="hidden sm:grid grid-cols-2 gap-4 items-center sm:mt-56">
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto sm:mt-56">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Dhungrebash
+          </h1>
+        </div>
+        <div className="hidden sm:grid grid-cols-2 gap-4 items-center">
           <div className="grid gap-4">
             <div>
               <img
@@ -339,51 +381,99 @@ const PhotoGallery = () => {
           </TECarousel>
         </div>
 
-        <div className="flex flex-col my-10">
-          <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div className="overflow-hidden">
-                <table className="min-w-full text-left text-sm font-light">
-                  <thead className="border-b font-medium dark:border-neutral-500">
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Nrs. 4,500/- per Night
+          </h1>
+
+          <p className="geologica text-sm sm:text-base">
+            Dhungrebas is named after the location address of the Resort, a
+            beautiful downtown of Sindhuli Bazaar. It consists of exclusive deluxe
+            room of the resort. Deluxe Rooms: Big living room with 1 king sized
+            bed with AC, high-quality sofa, Flat screen LED TV with speedy
+            internet, hot and cold water equipped with Wi-Fi and all the
+            required amenities kits.
+          </p>
+        </div>
+
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto ">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Room details
+          </h1>
+        </div>
+
+        <div class="container mx-auto flex flex-col">
+          <div class="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
+            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+              <div class="overflow-hidden">
+                <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                  <thead class="border-b font-medium dark:border-neutral-500">
                     <tr>
-                      <th scope="col" className="px-6 py-4">
-                        #
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        S.N.
                       </th>
-                      <th scope="col" className="px-6 py-4">
-                        First
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        Topic
                       </th>
-                      <th scope="col" className="px-6 py-4">
-                        Last
-                      </th>
-                      <th scope="col" className="px-6 py-4">
-                        Handle
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        Offers
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         1
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Mark</td>
-                      <td className="whitespace-nowrap px-6 py-4">Otto</td>
-                      <td className="whitespace-nowrap px-6 py-4">@mdo</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Room Category
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        Deluxe Room
+                      </td>
                     </tr>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         2
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Jacob</td>
-                      <td className="whitespace-nowrap px-6 py-4">Thornton</td>
-                      <td className="whitespace-nowrap px-6 py-4">@fat</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Capacity
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        2 pax
+                      </td>
                     </tr>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         3
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Larry</td>
-                      <td className="whitespace-nowrap px-6 py-4">Wild</td>
-                      <td className="whitespace-nowrap px-6 py-4">@twitter</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Bed Type
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        One King Size
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                        4
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Services
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        Closet with hangers, HD LED Smart TV, Telephone, High
+                        Speed Internet, Mini-bar, Attached Bathrooms, etc
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -393,11 +483,16 @@ const PhotoGallery = () => {
         </div>
       </>
     );
-  } else if (roomType === "doubleBedRoom") {
+  } else if (roomType === "mallaGaun") {
     return (
       <>
         <ScrollingLogo />
-        <div className="hidden sm:grid grid-cols-2 gap-4 items-center sm:mt-56">
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto sm:mt-56">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Malla Gaun
+          </h1>
+        </div>
+        <div className="hidden sm:grid grid-cols-2 gap-4 items-center">
           <div className="grid  gap-4">
             <div>
               <img
@@ -513,51 +608,100 @@ const PhotoGallery = () => {
           </TECarousel>
         </div>
 
-        <div className="flex flex-col my-10">
-          <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div className="overflow-hidden">
-                <table className="min-w-full text-left text-sm font-light">
-                  <thead className="border-b font-medium dark:border-neutral-500">
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Nrs.3500/per night
+          </h1>
+
+          <p className="geologica text-sm sm:text-base">
+            This block is named after the Malla dynasty who ruled Kathmandu
+            valley during 12-18th Centuries. It is also the name of small village
+            near Sindhuli Bazaar. This block occupies 6 rooms in total, which
+            consists of double bed in each room, This block is outfitted with
+            high-quality sofas, flat screens LED TV, speedy internet, hot and
+            cold water equipped with strong Wi-Fi and all the required amenities
+            kits.
+          </p>
+        </div>
+
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto ">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Room details
+          </h1>
+        </div>
+
+        <div class="container mx-auto flex flex-col">
+          <div class="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
+            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+              <div class="overflow-hidden">
+                <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                  <thead class="border-b font-medium dark:border-neutral-500">
                     <tr>
-                      <th scope="col" className="px-6 py-4">
-                        #
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        S.N.
                       </th>
-                      <th scope="col" className="px-6 py-4">
-                        First
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        Topic
                       </th>
-                      <th scope="col" className="px-6 py-4">
-                        Last
-                      </th>
-                      <th scope="col" className="px-6 py-4">
-                        Handle
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        Offers
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         1
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Mark</td>
-                      <td className="whitespace-nowrap px-6 py-4">Otto</td>
-                      <td className="whitespace-nowrap px-6 py-4">@mdo</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Room Category
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        Double Bed
+                      </td>
                     </tr>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         2
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Jacob</td>
-                      <td className="whitespace-nowrap px-6 py-4">Thornton</td>
-                      <td className="whitespace-nowrap px-6 py-4">@fat</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Capacity
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        2 pax
+                      </td>
                     </tr>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         3
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Larry</td>
-                      <td className="whitespace-nowrap px-6 py-4">Wild</td>
-                      <td className="whitespace-nowrap px-6 py-4">@twitter</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Bed Type
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        Two Double Beds
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                        4
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Services
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        Closet with hangers, HD LED Smart TV, Telephone, High
+                        Speed Internet, Mini-bar, Attached Bathrooms, etc
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -567,11 +711,16 @@ const PhotoGallery = () => {
         </div>
       </>
     );
-  } else if (roomType === "dormitoryRoom") {
+  } else if (roomType === "khaniyaKharka") {
     return (
       <>
         <ScrollingLogo />
-        <div className="hidden sm:grid grid-cols-2 md:grid-cols-4 gap-4 sm:mt-56">
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto sm:mt-56">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Khaniya Kharka
+          </h1>
+        </div>
+        <div className="hidden sm:grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="grid gap-4">
             <div>
               <img
@@ -776,51 +925,98 @@ const PhotoGallery = () => {
           </TECarousel>
         </div>
 
-        <div className="flex flex-col my-10">
-          <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div className="overflow-hidden">
-                <table className="min-w-full text-left text-sm font-light">
-                  <thead className="border-b font-medium dark:border-neutral-500">
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Nrs. 12,500/- per Night
+          </h1>
+
+          <p className="geologica text-sm sm:text-base">
+            Khaniya kharka block is named after one of the villages in Sindhuli
+            which is situated over 2,000 ft. above the sea level. It has a big
+            dormitory room. It has nine single beds with high-quality sofas, 2
+            Flat screens LED TV, speedy internet, hot and cold water and all the
+            required amenities kits.
+          </p>
+        </div>
+
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto ">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Room details
+          </h1>
+        </div>
+
+        <div class="container mx-auto flex flex-col">
+          <div class="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
+            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+              <div class="overflow-hidden">
+                <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                  <thead class="border-b font-medium dark:border-neutral-500">
                     <tr>
-                      <th scope="col" className="px-6 py-4">
-                        #
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        S.N.
                       </th>
-                      <th scope="col" className="px-6 py-4">
-                        First
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        Topic
                       </th>
-                      <th scope="col" className="px-6 py-4">
-                        Last
-                      </th>
-                      <th scope="col" className="px-6 py-4">
-                        Handle
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        Offers
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         1
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Mark</td>
-                      <td className="whitespace-nowrap px-6 py-4">Otto</td>
-                      <td className="whitespace-nowrap px-6 py-4">@mdo</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Room Category
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        Dormitory
+                      </td>
                     </tr>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         2
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Jacob</td>
-                      <td className="whitespace-nowrap px-6 py-4">Thornton</td>
-                      <td className="whitespace-nowrap px-6 py-4">@fat</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Capacity
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        18-20 pax
+                      </td>
                     </tr>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         3
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Larry</td>
-                      <td className="whitespace-nowrap px-6 py-4">Wild</td>
-                      <td className="whitespace-nowrap px-6 py-4">@twitter</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Bed Type
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        Nine King Size Bed
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                        4
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Services
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        HD LED Smart TV, Telephone, High Speed Internet,
+                        Attached Bathrooms, etc.
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -830,11 +1026,16 @@ const PhotoGallery = () => {
         </div>
       </>
     );
-  } else if (roomType === "familyRoom") {
+  } else if (roomType === "ratamata") {
     return (
       <>
         <ScrollingLogo />
-        <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-4 sm:mt-56">
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto sm:mt-56">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Ratamata
+          </h1>
+        </div>
+        <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-4">
           <div className="grid gap-4">
             <div>
               <img
@@ -928,51 +1129,99 @@ const PhotoGallery = () => {
           </TECarousel>
         </div>
 
-        <div className="flex flex-col my-10">
-          <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div className="overflow-hidden">
-                <table className="min-w-full text-left text-sm font-light">
-                  <thead className="border-b font-medium dark:border-neutral-500">
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Nrs.4000/per night
+          </h1>
+
+          <p className="geologica text-sm sm:text-base">
+            Ratamata connotes the meaning of red mud in Nepali. It is also the
+            name of the place near the resort in Sindhuli Bazaar. Ratamata
+            covers family rooms. Each room consists of one queen sized and one
+            single bed with AC, high-quality sofa, and Flat screen LED TV, hot
+            and cold water, Wi-Fi and all the required amenities
+            kits.
+          </p>
+        </div>
+
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto ">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Room details
+          </h1>
+        </div>
+
+        <div class="container mx-auto flex flex-col">
+          <div class="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
+            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+              <div class="overflow-hidden">
+                <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                  <thead class="border-b font-medium dark:border-neutral-500">
                     <tr>
-                      <th scope="col" className="px-6 py-4">
-                        #
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        S.N.
                       </th>
-                      <th scope="col" className="px-6 py-4">
-                        First
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        Topic
                       </th>
-                      <th scope="col" className="px-6 py-4">
-                        Last
-                      </th>
-                      <th scope="col" className="px-6 py-4">
-                        Handle
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        Offers
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         1
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Mark</td>
-                      <td className="whitespace-nowrap px-6 py-4">Otto</td>
-                      <td className="whitespace-nowrap px-6 py-4">@mdo</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Room Category
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        Family
+                      </td>
                     </tr>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         2
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Jacob</td>
-                      <td className="whitespace-nowrap px-6 py-4">Thornton</td>
-                      <td className="whitespace-nowrap px-6 py-4">@fat</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Capacity
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        3 pax
+                      </td>
                     </tr>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         3
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Larry</td>
-                      <td className="whitespace-nowrap px-6 py-4">Wild</td>
-                      <td className="whitespace-nowrap px-6 py-4">@twitter</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Bed Type
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        One Queen Size Bed & One Single Bed
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                        4
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Services
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        Closet with hangers, HD LED Smart TV, Telephone, High
+                        Speed Internet, Mini-bar, Attached Bathrooms, etc
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -982,11 +1231,16 @@ const PhotoGallery = () => {
         </div>
       </>
     );
-  } else if (roomType === "singleRoom") {
+  } else if (roomType === "pipalBhanjyang") {
     return (
       <>
         <ScrollingLogo />
-        <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-1 sm:gap-4 sm:mt-56">
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto sm:mt-56">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Pipal Bhanjyang
+          </h1>
+        </div>
+        <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-1 sm:gap-4">
           <div className="grid gap-4">
             <div>
               <img
@@ -1067,51 +1321,99 @@ const PhotoGallery = () => {
           </TECarousel>
         </div>
 
-        <div className="flex flex-col my-10">
-          <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div className="overflow-hidden">
-                <table className="min-w-full text-left text-sm font-light">
-                  <thead className="border-b font-medium dark:border-neutral-500">
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Nrs.2500/per night
+          </h1>
+
+          <p className="geologica text-sm sm:text-base">
+            This block is named after the sacred pipal tree, also called a Bodhi
+            Tree which has ability to produce oxygen even at night having high
+            medicinal value and is used to treat many ailments. This block
+            consists single, queen sized bed in each room. This block has AC,
+            high-quality sofas, flat screens LED TV, speedy internet, hot and
+            cold water equipped with all the required amenities kits.
+          </p>
+        </div>
+
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto ">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Room details
+          </h1>
+        </div>
+
+        <div class="container mx-auto flex flex-col">
+          <div class="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
+            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+              <div class="overflow-hidden">
+                <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                  <thead class="border-b font-medium dark:border-neutral-500">
                     <tr>
-                      <th scope="col" className="px-6 py-4">
-                        #
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        S.N.
                       </th>
-                      <th scope="col" className="px-6 py-4">
-                        First
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        Topic
                       </th>
-                      <th scope="col" className="px-6 py-4">
-                        Last
-                      </th>
-                      <th scope="col" className="px-6 py-4">
-                        Handle
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        Offers
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         1
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Mark</td>
-                      <td className="whitespace-nowrap px-6 py-4">Otto</td>
-                      <td className="whitespace-nowrap px-6 py-4">@mdo</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Room Category
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        Single
+                      </td>
                     </tr>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         2
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Jacob</td>
-                      <td className="whitespace-nowrap px-6 py-4">Thornton</td>
-                      <td className="whitespace-nowrap px-6 py-4">@fat</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Capacity
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        2 pax
+                      </td>
                     </tr>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         3
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Larry</td>
-                      <td className="whitespace-nowrap px-6 py-4">Wild</td>
-                      <td className="whitespace-nowrap px-6 py-4">@twitter</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Bed Type
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        One Queen Size Bed
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                        4
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Services
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        Closet with Hangers, HD LED Smart TV, Telephone, High
+                        Speed Internet, Attached Bathrooms, etc
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -1121,11 +1423,16 @@ const PhotoGallery = () => {
         </div>
       </>
     );
-  } else if (roomType === "suiteRoom") {
+  } else if (roomType === "dhungreBhanjyang") {
     return (
       <>
         <ScrollingLogo />
-        <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-4 sm:mt-56">
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto sm:mt-56">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Dhungre Bhanjhyang
+          </h1>
+        </div>
+        <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-4">
           <div className="grid gap-4">
             <div>
               <img
@@ -1180,51 +1487,100 @@ const PhotoGallery = () => {
           </TECarousel>
         </div>
 
-        <div className="flex flex-col my-10">
-          <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div className="overflow-hidden">
-                <table className="min-w-full text-left text-sm font-light">
-                  <thead className="border-b font-medium dark:border-neutral-500">
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Nrs.6500/per night
+          </h1>
+
+          <p className="geologica text-sm sm:text-base">
+            Dhungre Bhangyang is named after the location of the Resort, a
+            beautiful downtown of Sindhuli Bazaar. It has 2 suite rooms 201 and
+            202 Suite Rooms: Big living room with larger accommodation, 1 king
+            sized bed with AC, compact (mini) refrigerators, high-quality sofa,
+            Flat screen LED TV with speedy internet, hot and cold water equipped
+            with Wi-Fi and all the required amenities kits.
+          </p>
+        </div>
+
+        <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto ">
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Room details
+          </h1>
+        </div>
+
+        <div class="container mx-auto flex flex-col">
+          <div class="overflow-x-auto w-full sm:-mx-6 lg:-mx-8">
+            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+              <div class="overflow-hidden">
+                <table class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                  <thead class="border-b font-medium dark:border-neutral-500">
                     <tr>
-                      <th scope="col" className="px-6 py-4">
-                        #
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        S.N.
                       </th>
-                      <th scope="col" className="px-6 py-4">
-                        First
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        Topic
                       </th>
-                      <th scope="col" className="px-6 py-4">
-                        Last
-                      </th>
-                      <th scope="col" className="px-6 py-4">
-                        Handle
+                      <th
+                        scope="col"
+                        class="border-r px-6 py-4 dark:border-neutral-500"
+                      >
+                        Offers
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         1
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Mark</td>
-                      <td className="whitespace-nowrap px-6 py-4">Otto</td>
-                      <td className="whitespace-nowrap px-6 py-4">@mdo</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Room Category
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        Suite
+                      </td>
                     </tr>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         2
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Jacob</td>
-                      <td className="whitespace-nowrap px-6 py-4">Thornton</td>
-                      <td className="whitespace-nowrap px-6 py-4">@fat</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Capacity
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        2 pax
+                      </td>
                     </tr>
-                    <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
                         3
                       </td>
-                      <td className="whitespace-nowrap px-6 py-4">Larry</td>
-                      <td className="whitespace-nowrap px-6 py-4">Wild</td>
-                      <td className="whitespace-nowrap px-6 py-4">@twitter</td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Bed Type
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        One King Size
+                      </td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                      <td class="whitespace-nowrap border-r px-6 py-4 font-medium dark:border-neutral-500">
+                        4
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500">
+                        Services
+                      </td>
+                      <td class="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
+                        Closet with hangers, Cupboard with study table, HD LED
+                        Smart TV, Telephone, High Speed Internet, kitchens,
+                        Mini-bar, Attached Bathrooms, etc.
+                      </td>
                     </tr>
                   </tbody>
                 </table>

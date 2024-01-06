@@ -131,7 +131,7 @@ export default function Footer() {
                 <path
                   d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
               </svg>
-              <Link  className='hover:text-orange-500' to={'mailto:contact@ganapatihotelandresort.com'}>contact@ganapatihotelandresort.com</Link>
+              <Link  className='hover:text-orange-500' to={'mailto:contact@ganapatihotelandresort.com'}>Email us</Link>
             </p>
             <p className="mb-4 flex items-center justify-center md:justify-start">
               <svg
