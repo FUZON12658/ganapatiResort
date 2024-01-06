@@ -37,7 +37,7 @@ const DisplayPanes = () => {
                 className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.4)] bg-fixed">
                 <div className="flex h-full items-end justify-start">
                   <div className="m-6 text-white">
-                    <h5 className="mb-3 text-lg font-bold">Apartment</h5>
+                    <h5 className="mb-3 text-lg font-bold">Sola Bhanjyang - Apartment</h5>
                   </div>
                 </div>
               </div>
@@ -60,7 +60,7 @@ const DisplayPanes = () => {
                 <div className="flex h-full items-end justify-start">
                   <div className="m-6 text-white">
                     <h5 className="mb-3 text-lg font-bold">
-                      Deluxe Room
+                      Dhungrebash - Deluxe
                     </h5>
 
                   </div>
@@ -84,7 +84,7 @@ const DisplayPanes = () => {
                 className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.4)] bg-fixed">
                 <div className="flex h-full items-end justify-start">
                   <div className="m-6 text-white">
-                    <h5 className="mb-3 text-lg font-bold">Dormitory</h5>
+                    <h5 className="mb-3 text-lg font-bold">Khaniya Kharka - Dormitory</h5>
                   </div>
                 </div>
               </div>
@@ -106,7 +106,7 @@ const DisplayPanes = () => {
                 className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.4)] bg-fixed">
                 <div className="flex h-full items-end justify-start">
                   <div className="m-6 text-white">
-                    <h5 className="mb-3 text-lg font-bold">Double Bed</h5>
+                    <h5 className="mb-3 text-lg font-bold">Malla Gaun - Double Bed</h5>
                   </div>
                 </div>
               </div>
@@ -129,7 +129,7 @@ const DisplayPanes = () => {
                 <div className="flex h-full items-end justify-start">
                   <div className="m-6 text-white">
                     <h5 className="mb-3 text-lg font-bold">
-                      Family Sized
+                      Ratmata - Family
                     </h5>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ const DisplayPanes = () => {
                 className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.4)] bg-fixed">
                 <div className="flex h-full items-end justify-start">
                   <div className="m-6 text-white">
-                    <h5 className="mb-3 text-lg font-bold">Suite</h5>
+                    <h5 className="mb-3 text-lg font-bold">Dhungre Bhanjyang - Suite</h5>
                   </div>
                 </div>
               </div>
