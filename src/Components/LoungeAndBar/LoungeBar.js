@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import lb1 from "../../Images/loungeBar/1.jpg";
 import lb2 from "../../Images/loungeBar/2.jpg";
 import lb3 from "../../Images/loungeBar/3.jpg";
@@ -39,7 +39,11 @@ const LoungeBar = () => {
   
     return null; // or any other JSX you want, it doesn't render anything visible
   };
-  fullScreenCalled && ScrollToTopConditional();
+
+  useEffect(()=>{
+    !fullScreenCalled && ScrollToTopConditional();
+  },[fullScreenCalled])
+
   const [fullscreenImage, setFullscreenImage] = useState(null);
 
   const openFullscreen = (image) => {
