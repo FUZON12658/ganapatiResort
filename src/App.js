@@ -15,7 +15,7 @@ import LoungeBar from './Components/LoungeAndBar/LoungeBar';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import Experiences from './Components/Experiences/Experiences';
-import FoodMenu from './Components/FoodMenu/FoodMenu';
+
 
 
 
@@ -35,7 +35,6 @@ function App() {
     <Route exact path="/loungeBar" element={<LoungeBar/>}></Route>
     <Route exact path='/contacts' element={<Contact/>}></Route>
     <Route exact path='/experiences' element={<Experiences/>}></Route>
-    <Route exact path="/menu" element={<FoodMenu/>}></Route>
   </Routes>
   <Footer/>
   </Router>

@@ -260,12 +260,6 @@ const FloatingMenu = () => {
           >
             <Link to="tel:+9779805843762">Call Now</Link>
           </div>
-          <div
-            className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3"
-  
-          >
-            <Link to="/menu">Food Menu</Link>
-          </div>
           {/* Add more menu items as needed */}
         </div>}
         
@@ -290,12 +284,6 @@ const FloatingMenu = () => {
           >
             <Link to="tel:+9779805843762">Call Now</Link>
           </div>
-          <Link
-            className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3 text-xs md:text-lg"
-            to='/menu'
-          >
-            Food Menu
-          </Link>
         </div>  
 
       </div>
