@@ -182,55 +182,55 @@ const LoungeBar = () => {
           </h1>
         </div>
 
-        <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
-          <div class="-m-1 flex flex-wrap md:-m-2">
-            <div class="flex w-1/2 flex-wrap">
-              <div class="w-1/2 p-1 md:p-2">
+        <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+          <div className="-m-1 flex flex-wrap md:-m-2">
+            <div className="flex w-1/2 flex-wrap">
+              <div className="w-1/2 p-1 md:p-2">
                 <img
                   alt="gallery"
-                  class="block h-full w-full rounded-lg object-cover object-center"
+                  className="block h-full w-full rounded-lg object-cover object-center"
                   src={fi1}
                   onClick={() => openFullscreen(fi1)}
                 />
               </div>
-              <div class="w-1/2 p-1 md:p-2">
+              <div className="w-1/2 p-1 md:p-2">
                 <img
                   alt="gallery"
-                  class="block h-full w-full rounded-lg object-cover object-center"
+                  className="block h-full w-full rounded-lg object-cover object-center"
                   src={fi2}
                   onClick={() => openFullscreen(fi2)}
                 />
               </div>
-              <div class="w-full p-1 md:p-2">
+              <div className="w-full p-1 md:p-2">
                 <img
                   alt="gallery"
-                  class="block h-full w-full rounded-lg object-cover object-center"
+                  className="block h-full w-full rounded-lg object-cover object-center"
                   src={fi3}
                   onClick={() => openFullscreen(fi3)}
                 />
               </div>
             </div>
-            <div class="flex w-1/2 flex-wrap">
-              <div class="w-full p-1 md:p-2">
+            <div className="flex w-1/2 flex-wrap">
+              <div className="w-full p-1 md:p-2">
                 <img
                   alt="gallery"
-                  class="block h-full w-full rounded-lg object-cover object-center"
+                  className="block h-full w-full rounded-lg object-cover object-center"
                   src={fi4}
                   onClick={() => openFullscreen(fi4)}
                 />
               </div>
-              <div class="w-1/2 p-1 md:p-2">
+              <div className="w-1/2 p-1 md:p-2">
                 <img
                   alt="gallery"
-                  class="block h-full w-full rounded-lg object-cover object-center"
+                  className="block h-full w-full rounded-lg object-cover object-center"
                   src={fi5}
                   onClick={() => openFullscreen(fi5)}
                 />
               </div>
-              <div class="w-1/2 p-1 md:p-2">
+              <div className="w-1/2 p-1 md:p-2">
                 <img
                   alt="gallery"
-                  class="block h-full w-full rounded-lg object-cover object-center"
+                  className="block h-full w-full rounded-lg object-cover object-center"
                   src={fi1}
                   onClick={() => openFullscreen(fi1)}
                 />

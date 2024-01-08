@@ -15,6 +15,7 @@ import LoungeBar from './Components/LoungeAndBar/LoungeBar';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import Experiences from './Components/Experiences/Experiences';
+import NotFound from './Components/EmtpyPage/NotFound';
 
 
 
@@ -26,6 +27,7 @@ function App() {
   <Router>
   <FloatingMenu/>
   <Routes>
+    <Route exact path="*" element={<NotFound/>}></Route>
     <Route exact path="/" element={<Home/>}></Route>
     <Route exact path="/about" element={<About/>}></Route>
     <Route exact path="/rooms" element={<RoomsDisplay/>}></Route>
