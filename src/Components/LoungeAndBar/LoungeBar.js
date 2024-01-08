@@ -34,8 +34,12 @@ import fi5 from "../../Images/foodMenu/5fi.jpg";
 
 const LoungeBar = () => {
   const [fullScreenCalled, setFullScreenCalled]=useState(false);
-  !fullScreenCalled && useScrollToTop();
-
+  const ScrollToTopConditional = () => {
+    useScrollToTop(); // Call the hook unconditionally
+  
+    return null; // or any other JSX you want, it doesn't render anything visible
+  };
+  fullScreenCalled && ScrollToTopConditional();
   const [fullscreenImage, setFullscreenImage] = useState(null);
 
   const openFullscreen = (image) => {
@@ -49,6 +53,7 @@ const LoungeBar = () => {
 
   return (
     <div className="sm:my-24 sm:mt-0">
+      
       <ScrollingLogo />
       <section className="mb-32">
         <div
