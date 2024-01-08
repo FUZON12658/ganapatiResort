@@ -101,10 +101,10 @@ const LoungeBar = () => {
           className="flex items-center justify-center text-center"
         >
           <div className="absolute  text-2xl sm:text-6xl lobster z-20 text-white">
-            Meetings
+           Lounge & Bar
           </div>
           <div className="absolute  text-xs sm:text-xl geologica z-20 text-white font-bold translate-y-9 sm:translate-y-20">
-            A place where you can engineer great plans and make great decisions
+            A space as close as your own!
           </div>
           <div className="relative w-full overflow-hidden after:clear-both after:block after:content-[''] opacity-95 ">
             <TECarouselItem
