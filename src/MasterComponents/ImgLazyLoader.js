@@ -24,16 +24,16 @@ const ImgLazyLoader = (props) => {
     };
   }, []);
 
-  if(inView){
+  // if(inView){
     return(
       <img src={props.img} className={props.cName} alt="image" />
     )
-  }
-  else{
-    return (
-      <i ref={ref} class="fa-solid fa-spinner items-center"></i>
-    )
-  }
+  // }
+  // else{
+  //   return (
+  //     <i ref={ref} class="fa-solid fa-spinner items-center"></i>
+  //   )
+  // }
 }
 
 export default ImgLazyLoader
