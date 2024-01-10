@@ -34,10 +34,20 @@ const FloatingMenu = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrollY]);
-
+  
   const renderHamburgerMenuTrue = () => {
     setRenderHamburgerMenu(!renderHamburgerMenu);
   };
+
+  const sendEmail = (email) => {
+    var mailtoLink = "mailto:" + email ;
+    window.location.href = mailtoLink;
+  }
+
+  const call = (phoneNo) => {
+    var calltoLink = "tel:" + phoneNo ;
+    window.location.href = callToLink;
+  }
 
   const modifyShowFloatingMenu = () => {
     setShowFloatingMenu(!showFloatingMenu);
@@ -250,15 +260,15 @@ const FloatingMenu = () => {
             </div>
           </div>
           <div
-            className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3"
+            className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3" onClick={()=>sendEmail("contact@ganapatihotelandresort.com")}
           >
             <Link to="mailto:contact@ganapatihotelandresort.com">Book Now</Link>
           </div>
           <div
             className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3"
-  
+            onClick={()=>call("+9779802020346")}
           >
-            <Link to="tel:+9779805843762">Call Now</Link>
+            <Link to="tel:+9779802020346">Call Now</Link>
           </div>
           {/* Add more menu items as needed */}
         </div>}
@@ -275,14 +285,14 @@ const FloatingMenu = () => {
             </div>
           </div>
           <div
-            className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3 text-xs md:text-lg"
+            className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3 text-xs md:text-lg" onClick={()=>sendEmail("contact@ganapatihotelandresort.com")}
           >
             <Link to="mailto:contact@ganapatihotelandresort.com">Book Now</Link>
           </div>
           <div
-            className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3 text-xs md:text-lg"
+            className="sm:mb-4 hover:bg-orange-500 active:bg-orange-400 cursor-pointer rounded-lg px-3 py-3 text-xs md:text-lg" onClick={()=>call("+9779802020346")}
           >
-            <Link to="tel:+9779805843762">Call Now</Link>
+            <Link to="tel:+9779802020346">Call Now</Link>
           </div>
         </div>  
 
