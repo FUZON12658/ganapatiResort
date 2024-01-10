@@ -28,7 +28,7 @@ const Contact = () => {
                 <div className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:w-6/12 xl:px-12">
                   <div className="flex items-start">
                     <div className="shrink-0">
-                      <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
+                      <div className="hidden sm:inline-block rounded-md bg-primary-100 p-4 text-primary">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -45,7 +45,7 @@ const Contact = () => {
                         </svg>
                       </div>
                     </div>
-                    <div className="ml-6 grow">
+                    <div className="ml-6 grow text-xs sm:text-base">
                       <p className="mb-2 font-bold dark:text-white">
                         General Information
                       </p>
@@ -65,7 +65,7 @@ const Contact = () => {
                 <div className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:w-6/12 xl:px-12">
                   <div className="flex items-start">
                     <div className="shrink-0">
-                      <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
+                      <div className="hidden sm:inline-block rounded-md bg-primary-100 p-4 text-primary">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -82,7 +82,7 @@ const Contact = () => {
                         </svg>
                       </div>
                     </div>
-                    <div className="ml-6 grow">
+                    <div className="ml-6 grow text-xs sm:text-base">
                       <p className="mb-2 font-bold dark:text-white">
                         For Booking
                       </p>
