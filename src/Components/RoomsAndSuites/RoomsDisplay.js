@@ -14,29 +14,6 @@ import ImgLazyLoader from '../../MasterComponents/ImgLazyLoader'
 
 const RoomsDisplay = () => {
   const navigate = useNavigate();
-  const ref = useRef();
-  const [inView, setInView] = useState(false);
-
-  let callback = (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        setInView(true);
-      }
-    });
-  };
-
-  useEffect(() => {
-    let observer = new IntersectionObserver(callback);
-
-    if (ref?.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-
   useScrollToTop();
 
   const navigateToFrame = (roomType) => {
