@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import meetingsHero from "../../Images/meetings/meetings1.jpg";
 import meetingsOne from "../../Images/meetings/meetings2.jpg";
 import meetingsTwo from "../../Images/meetings/meetings3.jpg";
@@ -15,44 +15,68 @@ import { useScrollToTop } from "../../MasterComponents/useScrollToTop";
 
 const WeddingDisplay = () => {
   useScrollToTop();
+  const ref = useRef();
+  const [inView, setInView] = useState(false);
+
+  let callback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setInView(true);
+      }
+    });
+  };
+
+  useEffect(() => {
+    let observer = new IntersectionObserver(callback);
+
+    if (ref?.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <div className="sm:my-24 sm:mt-0">
       <ScrollingLogo />
       <section className="mb-32">
-        <TECarousel
-          showControls={false}
-          showIndicators
-          ride="carousel"
-          className="flex items-center justify-center text-center"
-        >
-          <div className="absolute  text-2xl sm:text-6xl lobster z-20 text-white">
-            Weddings
-          </div>
-          <div className="absolute  text-xs sm:text-xl geologica z-20 text-white font-bold translate-y-9 sm:translate-y-20">
-            Make you wedding magical with us!
-          </div>
-          <div className="relative w-full overflow-hidden after:clear-both after:block after:content-[''] opacity-95 ">
-            <TECarouselItem
-              itemID={1}
-              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-            >
-              <img src={weddingHero} className="block w-full" alt="..." />
-            </TECarouselItem>
-            <TECarouselItem
-              itemID={2}
-              className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-            >
-              <img src={weddingOne} className="block w-full" alt="..." />
-            </TECarouselItem>
-            <TECarouselItem
-              itemID={3}
-              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-            >
-              <img src={weddingTwo} className="block w-full" alt="..." />
-            </TECarouselItem>
-          </div>
-        </TECarousel>
+        {(inView)?(
+          <TECarousel
+            showControls={false}
+            showIndicators
+            ride="carousel"
+            className="flex items-center justify-center text-center"
+          >
+            <div className="absolute  text-2xl sm:text-6xl lobster z-20 text-white">
+              Weddings
+            </div>
+            <div className="absolute  text-xs sm:text-xl geologica z-20 text-white font-bold translate-y-9 sm:translate-y-20">
+              Make you wedding magical with us!
+            </div>
+            <div className="relative w-full overflow-hidden after:clear-both after:block after:content-[''] opacity-95 ">
+              <TECarouselItem
+                itemID={1}
+                className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              >
+                <img src={weddingHero} className="block w-full" alt="..." />
+              </TECarouselItem>
+              <TECarouselItem
+                itemID={2}
+                className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              >
+                <img src={weddingOne} className="block w-full" alt="..." />
+              </TECarouselItem>
+              <TECarouselItem
+                itemID={3}
+                className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              >
+                <img src={weddingTwo} className="block w-full" alt="..." />
+              </TECarouselItem>
+            </div>
+          </TECarousel>
+        ):(<img ref={ref} className="w-full"></img>)}
 
         <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto">
           <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
