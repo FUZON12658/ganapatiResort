@@ -24,7 +24,7 @@ const VideoLazyLoader = (props) => {
     };
   }, []);
 
-  if(inView){
+  // if(inView){
     return(
       <video className={props.cName} autoPlay loop muted>
       <source
@@ -33,12 +33,12 @@ const VideoLazyLoader = (props) => {
       />
     </video>
     )
-  }
-  else{
-    return (
-      <i ref={ref} class="fa-solid fa-spinner items-center"></i>
-    )
-  }
+  // }
+  // else{
+  //   return (
+  //     <i ref={ref} class="fa-solid fa-spinner items-center"></i>
+  //   )
+  // }
 }
 
 export default VideoLazyLoader
