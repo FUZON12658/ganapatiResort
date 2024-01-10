@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-const ImgLazyLoader = (props) => {
+const VideoLazyLoader = (props) => {
   const ref = useRef();
   const [inView, setInView] = useState(false);
 
@@ -26,7 +26,12 @@ const ImgLazyLoader = (props) => {
 
   if(inView){
     return(
-      <img src={props.img} className={props.cName} alt="image" />
+      <video className={props.cName} autoPlay loop muted>
+      <source
+        src={props.video}
+        type="video/mp4"
+      />
+    </video>
     )
   }
   else{
@@ -36,4 +41,4 @@ const ImgLazyLoader = (props) => {
   }
 }
 
-export default ImgLazyLoader
+export default VideoLazyLoader

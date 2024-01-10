@@ -4,6 +4,7 @@ import { TECarousel, TECarouselItem } from "tw-elements-react";
 import heroVideoThree from "../../Videos/heroVideoThree.mp4";
 import heroVideoTwo from "../../Videos/heroVideoTwo.mp4";
 import heroVideoOne from "../../Videos/heroVideoOne.mp4";
+import VideoLazyLoader from "../../MasterComponents/VideoLazyLoader";
 
 const VideoGallery = ()=>{
   return (
@@ -14,12 +15,7 @@ const VideoGallery = ()=>{
             itemID={1}
             className="relative float-left -mr-[100%] hidden w-full !transform-none transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
           >
-            <video className="w-full" autoPlay loop muted>
-              <source
-                src={heroVideoOne}
-                type="video/mp4"
-              />
-            </video>
+            <VideoLazyLoader video={heroVideoOne} cName="w-full"/>
             <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
               <h5 className="text-xl">Location</h5>
               <p>
@@ -31,12 +27,7 @@ const VideoGallery = ()=>{
             itemID={2}
             className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
           >
-            <video className="w-full" autoPlay loop muted>
-              <source
-                src={heroVideoTwo}
-                type="video/mp4"
-              />
-            </video>
+             <VideoLazyLoader video={heroVideoTwo} cName="w-full"/>
             <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
               <h5 className="text-xl">Hospitality</h5>
               <p>
@@ -48,12 +39,7 @@ const VideoGallery = ()=>{
             itemID={3}
             className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
           >
-            <video className="w-full" autoPlay loop muted>
-              <source
-                src={heroVideoThree}
-                type="video/mp4"
-              />
-            </video>
+            <VideoLazyLoader video={heroVideoThree} cName="w-full"/>
             <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
               <h5 className="text-xl">Facilities</h5>
               <p>
