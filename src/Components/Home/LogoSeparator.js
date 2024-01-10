@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import heroImage from "../../Images/resortLogo.png"
+import ImgLazyLoader from "../../MasterComponents/ImgLazyLoader"
 
 export default () => {
   return (
@@ -9,8 +10,7 @@ export default () => {
         <div className="flex flex-wrap">
           <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
             <div className="flex lg:py-12">
-              <img src={heroImage}
-                className="w-full rounded-lg shadow-lg dark:shadow-black/20 lg:ml-[50px] z-[10] bg-white" alt="image" />
+            <ImgLazyLoader img={heroImage} cName="w-full rounded-lg shadow-lg dark:shadow-black/20 lg:ml-[50px] z-[10] bg-white"/>
             </div>
           </div>
           <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12">

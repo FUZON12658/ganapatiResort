@@ -31,6 +31,8 @@ import fi2 from "../../Images/foodMenu/2fi.jpg";
 import fi3 from "../../Images/foodMenu/3fi.jpg";
 import fi4 from "../../Images/foodMenu/4fi.jpg";
 import fi5 from "../../Images/foodMenu/5fi.jpg";
+import ImgLazyLoader from "../../MasterComponents/ImgLazyLoader";
+
 
 const LoungeBar = () => {
   const [fullScreenCalled, setFullScreenCalled]=useState(false);
@@ -111,55 +113,55 @@ const LoungeBar = () => {
               itemID={1}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={lb1} className="block w-full" alt="..." />
+               <ImgLazyLoader img={lb1} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={2}
               className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={lb2} className="block w-full" alt="..." />
+               <ImgLazyLoader img={lb2} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={3}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={lb3} className="block w-full" alt="..." />
+               <ImgLazyLoader img={lb3} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={4}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={lb4} className="block w-full" alt="..." />
+               <ImgLazyLoader img={lb4} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={5}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={lb5} className="block w-full" alt="..." />
+               <ImgLazyLoader img={lb5} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={6}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={lb6} className="block w-full" alt="..." />
+               <ImgLazyLoader img={lb6} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={7}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={lb7} className="block w-full" alt="..." />
+              <ImgLazyLoader img={lb7} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={8}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={lb8} className="block w-full" alt="..." />
+               <ImgLazyLoader img={lb8} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={9}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={lb9} className="block w-full" alt="..." />
+               <ImgLazyLoader img={lb9} cName="block w-full"/>
             </TECarouselItem>
           </div>
         </TECarousel>
@@ -194,55 +196,25 @@ const LoungeBar = () => {
         <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
           <div className="-m-1 flex flex-wrap md:-m-2">
             <div className="flex w-1/2 flex-wrap">
-              <div className="w-1/2 p-1 md:p-2">
-                <img
-                  alt="gallery"
-                  className="block h-full w-full rounded-lg object-cover object-center"
-                  src={fi1}
-                  onClick={() => openFullscreen(fi1)}
-                />
+              <div className="w-1/2 p-1 md:p-2"  onClick={() => openFullscreen(fi1)}>
+              <ImgLazyLoader img={fi1} cName="block h-full w-full rounded-lg object-cover object-center"/>
               </div>
-              <div className="w-1/2 p-1 md:p-2">
-                <img
-                  alt="gallery"
-                  className="block h-full w-full rounded-lg object-cover object-center"
-                  src={fi2}
-                  onClick={() => openFullscreen(fi2)}
-                />
+              <div className="w-1/2 p-1 md:p-2" onClick={() => openFullscreen(fi2)}>
+              <ImgLazyLoader img={fi2} cName="block h-full w-full rounded-lg object-cover object-center"/>
               </div>
-              <div className="w-full p-1 md:p-2">
-                <img
-                  alt="gallery"
-                  className="block h-full w-full rounded-lg object-cover object-center"
-                  src={fi3}
-                  onClick={() => openFullscreen(fi3)}
-                />
+              <div className="w-full p-1 md:p-2"  onClick={() => openFullscreen(fi3)}>
+              <ImgLazyLoader img={fi3} cName="block h-full w-full rounded-lg object-cover object-center"/>
               </div>
             </div>
             <div className="flex w-1/2 flex-wrap">
-              <div className="w-full p-1 md:p-2">
-                <img
-                  alt="gallery"
-                  className="block h-full w-full rounded-lg object-cover object-center"
-                  src={fi4}
-                  onClick={() => openFullscreen(fi4)}
-                />
+            <div className="w-full p-1 md:p-2"  onClick={() => openFullscreen(fi4)}>
+              <ImgLazyLoader img={fi4} cName="block h-full w-full rounded-lg object-cover object-center"/>
               </div>
-              <div className="w-1/2 p-1 md:p-2">
-                <img
-                  alt="gallery"
-                  className="block h-full w-full rounded-lg object-cover object-center"
-                  src={fi5}
-                  onClick={() => openFullscreen(fi5)}
-                />
+              <div className="w-1/2 p-1 md:p-2"  onClick={() => openFullscreen(fi5)}>
+              <ImgLazyLoader img={fi5} cName="block h-full w-full rounded-lg object-cover object-center"/>
               </div>
-              <div className="w-1/2 p-1 md:p-2">
-                <img
-                  alt="gallery"
-                  className="block h-full w-full rounded-lg object-cover object-center"
-                  src={fi1}
-                  onClick={() => openFullscreen(fi1)}
-                />
+              <div className="w-1/2 p-1 md:p-2"  onClick={() => openFullscreen(fi1)}>
+              <ImgLazyLoader img={fi1} cName="block h-full w-full rounded-lg object-cover object-center"/>
               </div>
             </div>
           </div>
@@ -288,11 +260,7 @@ const LoungeBar = () => {
                 className="w-1/2 p-1 md:p-2"
                 onClick={() => openFullscreen(image)}
               >
-                <img
-                  alt="gallery"
-                  className="block h-full w-full rounded-lg object-cover object-center"
-                  src={image}
-                />
+                <ImgLazyLoader img={image} cName="block h-full w-full rounded-lg object-cover object-center"/>
               </div>
             ))}
           </div>
@@ -302,11 +270,7 @@ const LoungeBar = () => {
             className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-75 flex justify-center items-center"
             onClick={closeFullscreen}
           >
-            <img
-              src={fullscreenImage}
-              alt="fullscreen"
-              className="max-h-full max-w-full"
-            />
+            <ImgLazyLoader img={fullscreenImage} cName="max-h-full max-w-full"/>
           </div>
         )}
       </>

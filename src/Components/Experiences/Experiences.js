@@ -12,8 +12,11 @@ import exp10 from "../../Images/experiences/10.jpg";
 
 import { TECarousel, TECarouselItem } from "tw-elements-react";
 import ScrollingLogo from "../../MasterComponents/ScrollingLogo";
+import ImgLazyLoader from "../../MasterComponents/ImgLazyLoader";
+import { useScrollToTop } from "../../MasterComponents/useScrollToTop";
 
 const Experiences = () => {
+  useScrollToTop();
   return (
     <div className="sm:my-24 sm:mt-0">
       <ScrollingLogo />
@@ -32,61 +35,61 @@ const Experiences = () => {
               itemID={1}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={exp1} className="block w-full" alt="..." />
+              <ImgLazyLoader img={exp1} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={2}
               className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={exp2} className="block w-full" alt="..." />
+              <ImgLazyLoader img={exp2} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={3}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={exp3} className="block w-full" alt="..." />
+             <ImgLazyLoader img={exp3} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={4}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={exp4} className="block w-full" alt="..." />
+              <ImgLazyLoader img={exp4} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={5}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={exp5} className="block w-full" alt="..." />
+             <ImgLazyLoader img={exp5} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={6}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={exp6} className="block w-full" alt="..." />
+              <ImgLazyLoader img={exp6} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={7}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={exp7} className="block w-full" alt="..." />
+              <ImgLazyLoader img={exp7} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={8}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={exp8} className="block w-full" alt="..." />
+              <ImgLazyLoader img={exp8} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={9}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={exp9} className="block w-full" alt="..." />
+              <ImgLazyLoader img={exp9} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={10}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={exp10} className="block w-full" alt="..." />
+             <ImgLazyLoader img={exp10} cName="block w-full"/>
             </TECarouselItem>
           </div>
         </TECarousel>

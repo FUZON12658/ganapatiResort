@@ -18,37 +18,37 @@ export default function CarouselCrossfade() {
             itemID={1}
             className="relative float-left -mr-[100%] hidden w-full !transform-none transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
           >
-            <ImgLazyLoader img={hero} className="block w-full"/>
+            <ImgLazyLoader img={hero} cName="block w-full"/>
           </TECarouselItem>
           <TECarouselItem
             itemID={2}
             className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
           >
-            <ImgLazyLoader img={heroOne} className="block w-full"/>
+            <ImgLazyLoader img={heroOne} cName="block w-full"/>
           </TECarouselItem>
           <TECarouselItem
             itemID={3}
             className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
           >
-            <ImgLazyLoader img={heroTwo} className="block w-full"/>
+            <ImgLazyLoader img={heroTwo} cName="block w-full"/>
           </TECarouselItem>
           <TECarouselItem
             itemID={4}
             className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
           >
-            <ImgLazyLoader img={heroThree} className="block w-full"/>
+            <ImgLazyLoader img={heroThree} cName="block w-full"/>
           </TECarouselItem>
           <TECarouselItem
             itemID={5}
             className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
           >
-            <ImgLazyLoader img={heroFour} className="block w-full"/>
+            <ImgLazyLoader img={heroFour} cName="block w-full"/>
           </TECarouselItem>
           <TECarouselItem
             itemID={6}
             className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
           >
-            <ImgLazyLoader img={heroFive} className="block w-full"/>
+            <ImgLazyLoader img={heroFive} cName="block w-full"/>
           </TECarouselItem>
         </div>
       </TECarousel>

@@ -4,6 +4,8 @@ import nareshImage from "../../Images/aboutUs/naresh.jpg";
 import krishnaImage from "../../Images/aboutUs/krishna.jpg";
 import santoshImage from "../../Images/aboutUs/santosh.jpg";
 import { useScrollToTop } from "../../MasterComponents/useScrollToTop";
+import ImgLazyLoader from "../../MasterComponents/ImgLazyLoader";
+
 
 const About = () => {
   useScrollToTop();
@@ -39,7 +41,7 @@ const About = () => {
     <div>
       <ScrollingLogo />
       <div
-        class="embed-responsive embed-responsive-21by9 relative w-full overflow-hidden"
+        className="embed-responsive embed-responsive-21by9 relative w-full overflow-hidden"
         style={{ paddingTop: "42.857143%" }}
       >
         <iframe
@@ -74,24 +76,20 @@ const About = () => {
         </p>
       </div>
       {people.map((person) => (
-        <div class="container my-24 mx-auto md:px-6">
-          <section class="mb-32">
-            <div class="flex flex-wrap">
-              <div class="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
-                <div class="flex lg:py-12">
-                  <img
-                    src={person.img}
-                    class="z-[10] w-full rounded-lg shadow-lg dark:shadow-black/20 lg:ml-[50px]"
-                    alt="image"
-                  />
+        <div className="container my-24 mx-auto md:px-6">
+          <section className="mb-32">
+            <div className="flex flex-wrap">
+              <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
+                <div className="flex lg:py-12">
+                <ImgLazyLoader img={[person.img]} cName="z-[10] w-full rounded-lg shadow-lg dark:shadow-black/20 lg:ml-[50px]"/>
                 </div>
               </div>
 
-              <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
-                <div class="flex h-full items-center rounded-lg bg-orange-500 p-6 text-center text-white lg:pl-12 lg:text-left">
-                  <div class="lg:pl-12">
-                    <h2 class="mb-8 text-3xl font-bold">{person.name}</h2>
-                    <p class="mb-8 pb-2 lg:pb-0">{person.descriptionOne}</p>
+              <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+                <div className="flex h-full items-center rounded-lg bg-orange-500 p-6 text-center text-white lg:pl-12 lg:text-left">
+                  <div className="lg:pl-12">
+                    <h2 className="mb-8 text-3xl font-bold">{person.name}</h2>
+                    <p className="mb-8 pb-2 lg:pb-0">{person.descriptionOne}</p>
                     <p>{person.descriptionTwo}</p>
                   </div>
                 </div>

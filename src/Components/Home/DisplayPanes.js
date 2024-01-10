@@ -7,6 +7,7 @@ import doubleBedHero from "../../Images/doubleBedRoom/doubleBedRoom1.jpg"
 import familyHero from "../../Images/familyRoom/familyRoom1.jpg"
 import suiteHero from "../../Images/suiteRoom/suiteRoom1.jpg"
 import { Link, useNavigate } from 'react-router-dom';
+import ImgLazyLoader from '../../MasterComponents/ImgLazyLoader';
 
 
 
@@ -29,9 +30,7 @@ const DisplayPanes = () => {
             data-te-ripple-init
             data-te-ripple-color="light"
             onClick={()=>navigateToFrame("solaBhanjyang")}>
-            <img
-              src={apartmentHero}
-              className="w-full align-middle transition duration-300 ease-linear" />
+              <ImgLazyLoader img={apartmentHero} cName="w-full align-middle transition duration-300 ease-linear"/>
             <Link to="">
               <div
                 className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.4)] bg-fixed">
@@ -51,9 +50,7 @@ const DisplayPanes = () => {
             data-te-ripple-init
             data-te-ripple-color="light"
             onClick={()=>navigateToFrame("dhungrebash")}>
-            <img
-              src={deluxeHero}
-              className="w-full align-middle transition duration-300 ease-linear" />
+            <ImgLazyLoader img={deluxeHero} cName="w-full align-middle transition duration-300 ease-linear"/>
             <Link to="">
               <div
                 className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.4)] bg-fixed">
@@ -76,9 +73,7 @@ const DisplayPanes = () => {
             data-te-ripple-init
             data-te-ripple-color="light"
             onClick={()=>navigateToFrame("khaniyaKharka")}>
-            <img
-              src={dormitoryHero}
-              className="w-full align-middle transition duration-300 ease-linear" />
+            <ImgLazyLoader img={dormitoryHero} cName="w-full align-middle transition duration-300 ease-linear"/>
             <Link to="">
               <div
                 className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.4)] bg-fixed">
@@ -98,9 +93,7 @@ const DisplayPanes = () => {
             data-te-ripple-init
             data-te-ripple-color="light"
             onClick={()=>navigateToFrame("mallaGaun")}>
-            <img
-              src={doubleBedHero}
-              className="w-full align-middle transition duration-300 ease-linear" />
+            <ImgLazyLoader img={doubleBedHero} cName="w-full align-middle transition duration-300 ease-linear"/>
             <Link to="">
               <div
                 className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.4)] bg-fixed">
@@ -120,9 +113,7 @@ const DisplayPanes = () => {
             data-te-ripple-init
             data-te-ripple-color="light"
             onClick={()=>navigateToFrame("ratamata")}>
-            <img
-              src={familyHero}
-              className="w-full align-middle transition duration-300 ease-linear" />
+            <ImgLazyLoader img={familyHero} cName="w-full align-middle transition duration-300 ease-linear"/>
             <Link to="">
               <div
                 className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.4)] bg-fixed">
@@ -144,9 +135,7 @@ const DisplayPanes = () => {
             data-te-ripple-init
             data-te-ripple-color="light"
             onClick={()=>navigateToFrame("dhungreBhanjyang")}>
-            <img
-              src={suiteHero}
-              className="w-full align-middle transition duration-300 ease-linear" />
+            <ImgLazyLoader img={suiteHero} cName="w-full align-middle transition duration-300 ease-linear"/>
             <Link to="">
               <div
                 className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.4)] bg-fixed">

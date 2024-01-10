@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import heroImage from "../Images/resortLogo.png"
+import ImgLazyLoader from '../MasterComponents/ImgLazyLoader';
+
 
 export default function Footer() {
   return (
@@ -52,8 +54,7 @@ export default function Footer() {
         <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4 items-center">
           {/* <!-- TW Elements section --> */}
           <div className="">
-          <img src={heroImage}
-                className="rounded-lg shadow-lg dark:shadow-black/20 z-[10] scale-50 bg-white mb-4 flex justify-center font-semibold uppercase md:justify-start" alt="image" />
+          <ImgLazyLoader img={heroImage} cName="rounded-lg shadow-lg dark:shadow-black/20 z-[10] scale-50 bg-white mb-4 flex justify-center font-semibold uppercase md:justify-start"/>
           </div>
           {/* <!-- Products section --> */}
           <div className="">

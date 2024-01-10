@@ -31,7 +31,7 @@ const ImgLazyLoader = (props) => {
   }
   if(inView){
     return(
-      <img src={props.img} alt="image" />
+      <img src={props.img} className={props.cName} alt="image" />
     )
   }
 }

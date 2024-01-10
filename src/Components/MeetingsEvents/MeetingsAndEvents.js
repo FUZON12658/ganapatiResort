@@ -8,6 +8,8 @@ import eventsTwo from "../../Images/events/events3.jpg";
 import { TECarousel, TECarouselItem } from "tw-elements-react";
 import ScrollingLogo from "../../MasterComponents/ScrollingLogo";
 import { useScrollToTop } from "../../MasterComponents/useScrollToTop";
+import ImgLazyLoader from "../../MasterComponents/ImgLazyLoader";
+
 
 const MeetingsAndEvents = () => {
   useScrollToTop();
@@ -33,19 +35,19 @@ const MeetingsAndEvents = () => {
               itemID={1}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={meetingsHero} className="block w-full" alt="..." />
+              <ImgLazyLoader img={meetingsHero} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={2}
               className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={meetingsOne} className="block w-full" alt="..." />
+              <ImgLazyLoader img={meetingsOne} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={3}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={meetingsTwo} className="block w-full" alt="..." />
+              <ImgLazyLoader img={meetingsTwo} cName="block w-full"/>
             </TECarouselItem>
           </div>
         </TECarousel>
@@ -90,19 +92,19 @@ const MeetingsAndEvents = () => {
               itemID={1}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={eventsHero} className="block w-full" alt="..." />
+              <ImgLazyLoader img={eventsHero} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={2}
               className="relative float-left hidden -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={eventsOne} className="block w-full" alt="..." />
+              <ImgLazyLoader img={eventsOne} cName="block w-full"/>
             </TECarouselItem>
             <TECarouselItem
               itemID={3}
               className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
             >
-              <img src={eventsTwo} className="block w-full" alt="..." />
+              <ImgLazyLoader img={eventsTwo} cName="block w-full"/>
             </TECarouselItem>
           </div>
         </TECarousel>
