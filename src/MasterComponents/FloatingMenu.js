@@ -45,7 +45,7 @@ const FloatingMenu = () => {
   }
 
   const call = (phoneNo) => {
-    var calltoLink = "tel:" + phoneNo ;
+    var callToLink = "tel:" + phoneNo ;
     window.location.href = callToLink;
   }
 
