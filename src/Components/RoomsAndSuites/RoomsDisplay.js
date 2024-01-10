@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import apartmentHero from "../../Images/apartmentRoom/apartmentRoom1.jpg"
 import deluxeHero from "../../Images/deluxeRoom/deluxeRoom1.jpg"
 import dormitoryHero from "../../Images/dormitoryRoom/dormitoryRoom1.jpg"
@@ -9,10 +9,33 @@ import suiteHero from "../../Images/suiteRoom/suiteRoom1.jpg"
 import { Link, useNavigate } from 'react-router-dom'
 import ScrollingLogo from '../../MasterComponents/ScrollingLogo'
 import { useScrollToTop } from '../../MasterComponents/useScrollToTop'
+import ImgLazyLoader from '../../MasterComponents/ImgLazyLoader'
 
 
 const RoomsDisplay = () => {
   const navigate = useNavigate();
+  const ref = useRef();
+  const [inView, setInView] = useState(false);
+
+  let callback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setInView(true);
+      }
+    });
+  };
+
+  useEffect(() => {
+    let observer = new IntersectionObserver(callback);
+
+    if (ref?.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   useScrollToTop();
 
@@ -37,7 +60,7 @@ const RoomsDisplay = () => {
                 <div
                   className="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
                   data-te-ripple-init data-te-ripple-color="light">
-                  <img src={apartmentHero} className="w-full" />
+                  <ImgLazyLoader img={apartmentHero} className="w-full"/>
                   <Link to="">
                     <div
                       className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]">
@@ -64,7 +87,7 @@ const RoomsDisplay = () => {
                 <div
                   className="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
                   data-te-ripple-init data-te-ripple-color="light">
-                  <img src={suiteHero} className="w-full" />
+                  <ImgLazyLoader img={suiteHero} className="w-full"/>
                   <Link to="">
                     <div
                       className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]">
@@ -91,7 +114,7 @@ const RoomsDisplay = () => {
                 <div
                   className="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
                   data-te-ripple-init data-te-ripple-color="light">
-                  <img src={dormitoryHero} className="w-full" />
+                  <ImgLazyLoader img={dormitoryHero} className="w-full"/>
                   <Link to="">
                     <div
                       className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]">
@@ -122,7 +145,7 @@ const RoomsDisplay = () => {
                 <div
                   className="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
                   data-te-ripple-init data-te-ripple-color="light">
-                  <img src={deluxeHero} className="w-full" />
+                  <ImgLazyLoader img={deluxeHero} className="w-full"/>
                   <Link to="">
                     <div
                       className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]">
@@ -152,7 +175,7 @@ const RoomsDisplay = () => {
                 <div
                   className="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
                   data-te-ripple-init data-te-ripple-color="light">
-                  <img src={doubleBedHero} className="w-full" />
+                  <ImgLazyLoader img={doubleBedHero} className="w-full"/>
                   <Link to="">
                     <div
                       className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]">
@@ -179,7 +202,7 @@ const RoomsDisplay = () => {
                 <div
                   className="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
                   data-te-ripple-init data-te-ripple-color="light">
-                  <img src={familyHero} className="w-full" />
+                  <ImgLazyLoader img={familyHero} className="w-full"/>
                   <Link to="">
                     <div
                       className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]">
@@ -210,7 +233,7 @@ const RoomsDisplay = () => {
                 <div
                   className="relative mx-4 -mt-4 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
                   data-te-ripple-init data-te-ripple-color="light">
-                  <img src={singleHero} className="w-full" />
+                  <ImgLazyLoader img={singleHero} className="w-full"/>
                   <Link to="">
                     <div
                       className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]">
