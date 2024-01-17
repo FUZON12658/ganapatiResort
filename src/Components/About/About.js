@@ -1,7 +1,6 @@
 import React from "react";
 import ScrollingLogo from "../../MasterComponents/ScrollingLogo";
 import nareshImage from "../../Images/aboutUs/naresh.jpg";
-import krishnaImage from "../../Images/aboutUs/krishna.jpg";
 import santoshImage from "../../Images/aboutUs/santosh.jpg";
 import { useScrollToTop } from "../../MasterComponents/useScrollToTop";
 import ImgLazyLoader from "../../MasterComponents/ImgLazyLoader";
@@ -15,7 +14,7 @@ const About = () => {
       img: nareshImage,
       name: "Naresh K. Shrestha",
       descriptionOne:
-        "Dear Valued Stakeholders, Welcome to GANAPATI HOTEL AND RESORT (GHAR) In today&#39;s competitive business environment, it is extremely important for us to maintain a leading position in Nepal from the beautiful landscape of SINDHULI, creating a difference in business setting to attain sustainable growth and profit, when it comes to planning, development and the management of hospitality facilities, no one does it better than GANAPATI in SINDHULI.",
+        "Dear Valued Stakeholders, Welcome to GANAPATI HOTEL AND RESORT (GHAR) In today's competitive business environment, it is extremely important for us to maintain a leading position in Nepal from the beautiful landscape of SINDHULI, creating a difference in business setting to attain sustainable growth and profit, when it comes to planning, development and the management of hospitality facilities, no one does it better than GANAPATI in SINDHULI.",
       descriptionTwo:
         " We pride ourself on our different stakeholders, GM, partners and guest. Our expertise lies on our dedicated team of employees. We cordially invite you to join us, pay your visit.",
     },
@@ -26,14 +25,6 @@ const About = () => {
         "Ganapati Hotel and Resort is in Sindhuli, in the fertile, subtropical inner terai region of Nepal. Situated to the northern east of the capital city, the resort is easily accessible from India or Kathmandu, offering guests a sophisticated and thrilling getaway in a BP Highway. Luxurious accommodation, superb leisure facilities and top-class dining options make our facility a perfect venue for holidays, quick breaks, conferences, wedding and all kind of celebrations.",
       descriptionTwo:
         "We aim to support the development of tourism sector. We are proud of our success on our different stakeholders, local community, partners and guest. Our expertise lies on our dedicated team of workforce. We warmly invite you to join us and experience the differences!",
-    },
-    {
-      img: krishnaImage,
-      name: "Krishna K. Shrestha",
-      descriptionOne:
-        "If youve stayed with us and have been our guest previously, we look forward to welcoming you back once again to GANAPATI HOTEL AND RESORT (GHAR). My staff and I take great pleasure in seeing our customers back, and having the opportunity to extend our unique brand of Nepalese hospitality.The hotel is dedicated to our guest, by demonstrating our policy of 100% Guest Satisfaction and consistently improving our services and amenities we provide at your service.",
-      descriptionTwo:
-        "Ganapati will be expanding its wings immediately on academic sectors by exploring the technical courses on different hospitality sectors like Front office, Service, Production and Housekeeping. Please feel free to share with us any suggestions or ideas that may improve the quality of our service we provide. On behalf of Management, I look forward to welcoming you here for an enjoyable stay. We invite you to experience hospitality at its finest at GANAPATI.",
     },
   ];
 
@@ -48,7 +39,7 @@ const About = () => {
           className="embed-responsive-item absolute bottom-0 left-0 right-0 top-0 h-full w-full"
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/pkEaMI_1WcA?si=_O8P3axXIVpt96Iw"
+          src="https://www.youtube.com/embed/pWSCyZQzo6A?si=9Zfa4eP5rcKl65nX"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

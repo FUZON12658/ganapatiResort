@@ -20,7 +20,7 @@ export default () => {
                   What are you waiting for?
                 </h2>
                 <p className="mb-6 pb-2 lg:pb-0">
-                Discover serenity at Ganpati Resort - your ultimate escape from the chaos of everyday life. Immerse yourself in nature's embrace and experience tranquility like never before. Join us for a day of relaxation, adventure, and bliss. 
+                Discover serenity at Ganpati Hotel and Resort - your ultimate escape from the chaos of everyday life. Immerse yourself in nature's embrace and experience tranquility like never before. Join us for a day of relaxation, adventure, and bliss. 
                 </p>
                 <Link to="tel:+9779802020346">
                 <button type="button"
