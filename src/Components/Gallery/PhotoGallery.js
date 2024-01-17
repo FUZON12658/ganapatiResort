@@ -929,7 +929,10 @@ const PhotoGallery = () => {
 
         <div className="container xl:w-[50vw] 2xl:w-[30vw] mx-auto">
           <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
-            Nrs. 12,500/- per Night
+            Nrs. 8,500/- per Night (6 bed)
+          </h1>
+          <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Nrs. 4,500/- per Night (3 bed)
           </h1>
 
           <p className="geologica text-sm sm:text-base">
@@ -994,7 +997,7 @@ const PhotoGallery = () => {
                         Capacity
                       </td>
                       <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
-                        18-20 pax
+                        12-14 pax(6 bed), 6-8 pax(3 bed)
                       </td>
                     </tr>
                     <tr className="border-b dark:border-neutral-500">
@@ -1005,7 +1008,7 @@ const PhotoGallery = () => {
                         Bed Type
                       </td>
                       <td className="whitespace-nowrap border-r px-6 py-4 dark:border-neutral-500 text-start">
-                        Nine King Size Bed
+                        Six King Size Bed or 3 King Size bed
                       </td>
                     </tr>
                     <tr className="border-b dark:border-neutral-500">
