@@ -5,6 +5,7 @@ import heroTwo from '../../Images/heroTwo.jpg';
 import heroThree from '../../Images/heroThree.jpg'
 import heroFour from '../../Images/heroFour.jpg';
 import heroFive from '../../Images/heroFive.jpg'
+import heroSix from "../../Images/heroSix.jpg"
 import { TECarousel, TECarouselItem } from "tw-elements-react";
 import ImgLazyLoader from "../../MasterComponents/ImgLazyLoader";
 
@@ -49,6 +50,12 @@ export default function CarouselCrossfade() {
             className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
           >
             <ImgLazyLoader img={heroFive} cName="block w-full"/>
+          </TECarouselItem>
+          <TECarouselItem
+            itemID={7}
+            className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+          >
+            <ImgLazyLoader img={heroSix} cName="block w-full"/>
           </TECarouselItem>
         </div>
       </TECarousel>
