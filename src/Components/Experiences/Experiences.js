@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import exp1 from "../../Images/experiences/1.jpg";
 import exp2 from "../../Images/experiences/2.jpg";
 import exp3 from "../../Images/experiences/3.jpg";
@@ -15,8 +15,44 @@ import ScrollingLogo from "../../MasterComponents/ScrollingLogo";
 import ImgLazyLoader from "../../MasterComponents/ImgLazyLoader";
 import { useScrollToTop } from "../../MasterComponents/useScrollToTop";
 
+import wf1 from "../../Images/withinFifteen/1wf.jpg";
+import wf2 from "../../Images/withinFifteen/2wf.jpg";
+import wf3 from "../../Images/withinFifteen/3wf.jpg";
+import wf4 from "../../Images/withinFifteen/4wf.jpg";
+import wf5 from "../../Images/withinFifteen/5wf.jpg";
+import wf6 from "../../Images/withinFifteen/6wf.jpg";
+import wf7 from "../../Images/withinFifteen/7wf.jpg";
+import wf8 from "../../Images/withinFifteen/8wf.jpg";
+import wf9 from "../../Images/withinFifteen/9wf.jpg";
+import wf10 from "../../Images/withinFifteen/10wf.jpg";
+import wf11 from "../../Images/withinFifteen/11wf.jpg";
+import wf12 from "../../Images/withinFifteen/12wf.jpg";
+import wf13 from "../../Images/withinFifteen/13wf.jpg";
+import wf14 from "../../Images/withinFifteen/14wf.jpg";
+import wf15 from "../../Images/withinFifteen/15wf.jpg";
 const Experiences = () => {
-  useScrollToTop();
+  const [fullScreenCalled, setFullScreenCalled]=useState(false);
+  const ScrollToTopConditional = () => {
+    useScrollToTop(); // Call the hook unconditionally
+  
+    return null; // or any other JSX you want, it doesn't render anything visible
+  };
+
+  useEffect(()=>{
+    !fullScreenCalled && ScrollToTopConditional();
+  },[fullScreenCalled])
+
+  const [fullscreenImage, setFullscreenImage] = useState(null);
+
+  const openFullscreen = (image) => {
+    setFullScreenCalled(true);
+    setFullscreenImage(image);
+  };
+
+  const closeFullscreen = () => {
+    setFullscreenImage(null);
+  };
+
   return (
     <div className="sm:my-24 sm:mt-0">
       <ScrollingLogo />
@@ -167,24 +203,82 @@ const Experiences = () => {
           <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
             Nearest Attractions and Activities
           </h1>
-
           <p className="geologica text-sm sm:text-base">
             1. Siddha Baba temple hiking
           </p>
           <p className="geologica text-sm sm:text-base">2. Bharat Taal visit</p>
           <p className="geologica text-sm sm:text-base">3. Kala Ghar</p>
-            <div
-              class="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden"
-              style={{ paddingTop: "56.25%" }}
-            >
-            <iframe
-                class="embed-responsive-item absolute bottom-0 left-0 right-0 top-0 h-full w-full rounded-lg mb-10"
-                src="https://www.youtube.com/embed/5ecdh-820Rw?si=L73TkowYUeshGQ1b"
-                allowfullscreen
-              ></iframe>
+          <p className="geologica text-sm sm:text-base">4. Sindhuli Gadhi</p>
+          <p className="geologica text-sm sm:text-base">
+          &nbsp;&nbsp;Sindhuli gadhi holds a special place in Nepal’s history. This is the ancient fort where the Gurkha soldiers won over the soldiers from the British Empire in 1767. Hence, this fort today stands as a symbol of bravery of Nepali soldiers.<br/><br/>
+          </p>
+
+        </div>
+
+        <h1 className="mb-6 mt-10 text-xl sm:text-3xl font-bold lobster text-center">
+            Places to visit within 15km from us!
+          </h1>
+        <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
+          <div className="-m-1 flex flex-wrap md:-m-2">
+            <div className="flex w-1/2 flex-wrap">
+              <div className="w-1/2 p-1 md:p-2"  onClick={() => openFullscreen(wf1)}>
+              <ImgLazyLoader img={wf1} cName="block h-full w-full rounded-lg object-cover object-center"/>
+              </div>
+              <div className="w-1/2 p-1 md:p-2" onClick={() => openFullscreen(wf2)}>
+              <ImgLazyLoader img={wf2} cName="block h-full w-full rounded-lg object-cover object-center"/>
+              </div>
+              <div className="w-full p-1 md:p-2"  onClick={() => openFullscreen(wf3)}>
+              <ImgLazyLoader img={wf3} cName="block h-full w-full rounded-lg object-cover object-center"/>
+              </div>
             </div>
+            <div className="flex w-1/2 flex-wrap">
+            <div className="w-full p-1 md:p-2"  onClick={() => openFullscreen(wf4)}>
+              <ImgLazyLoader img={wf4} cName="block h-full w-full rounded-lg object-cover object-center"/>
+              </div>
+              <div className="w-1/2 p-1 md:p-2"  onClick={() => openFullscreen(wf5)}>
+              <ImgLazyLoader img={wf5} cName="block h-full w-full rounded-lg object-cover object-center"/>
+              </div>
+              <div className="w-1/2 p-1 md:p-2"  onClick={() => openFullscreen(wf6)}>
+              <ImgLazyLoader img={wf6} cName="block h-full w-full rounded-lg object-cover object-center"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
+          <div className="-m-1 flex flex-wrap md:-m-2">
+            <div className="flex w-1/2 flex-wrap">
+              <div className="w-1/2 p-1 md:p-2"  onClick={() => openFullscreen(wf7)}>
+              <ImgLazyLoader img={wf7} cName="block h-full w-full rounded-lg object-cover object-center"/>
+              </div>
+              <div className="w-1/2 p-1 md:p-2" onClick={() => openFullscreen(wf8)}>
+              <ImgLazyLoader img={wf8} cName="block h-full w-full rounded-lg object-cover object-center"/>
+              </div>
+              <div className="w-full p-1 md:p-2"  onClick={() => openFullscreen(wf9)}>
+              <ImgLazyLoader img={wf9} cName="block h-full w-full rounded-lg object-cover object-center"/>
+              </div>
+            </div>
+            <div className="flex w-1/2 flex-wrap">
+            <div className="w-full p-1 md:p-2"  onClick={() => openFullscreen(wf10)}>
+              <ImgLazyLoader img={wf10} cName="block h-full w-full rounded-lg object-cover object-center"/>
+              </div>
+              <div className="w-1/2 p-1 md:p-2"  onClick={() => openFullscreen(wf11)}>
+              <ImgLazyLoader img={wf11} cName="block h-full w-full rounded-lg object-cover object-center"/>
+              </div>
+              <div className="w-1/2 p-1 md:p-2"  onClick={() => openFullscreen(wf12)}>
+              <ImgLazyLoader img={wf12} cName="block h-full w-full rounded-lg object-cover object-center"/>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+      {fullscreenImage && (
+          <div
+            className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-75 flex justify-center items-center"
+            onClick={closeFullscreen}
+          >
+            <ImgLazyLoader img={fullscreenImage} cName="max-h-full max-w-full"/>
+          </div>
+        )}
     </div>
   );
 };
